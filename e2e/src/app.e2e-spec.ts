@@ -5,13 +5,17 @@ describe('workspace-project App', () => {
   let page: AppPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    browser.waitForAngularEnabled(false);
+    browser.get('/');
   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to navigator!');
+  it('Title verification', () => {
+     expect(browser.getTitle()).toEqual('ViridianEdge');
+
   });
+  it('Login verification', () => {
+
+  })
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser

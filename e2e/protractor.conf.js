@@ -12,7 +12,8 @@ exports.config = {
     'browserName': 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'https://nbs-qa.azurewebsites.net/Account/Login',
+  ignoreSynchronization: true,
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
