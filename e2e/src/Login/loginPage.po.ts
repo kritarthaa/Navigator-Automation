@@ -1,36 +1,37 @@
-import { browser, by, element } from 'protractor';
+import {browser, by, element, ElementFinder, ExpectedConditions} from 'protractor';
 
 export class LoginPage {
-    // elements
-    username() {
-        return element(by.xpath('//*[@id="UserName"]'));
-    }
+  public loginUrlPath = '/Account/Login';
+  public emailInput = () => element(by.xpath('//*[@id="UserName"]'));
+  public passwordInput = () => element(by.xpath('//*[@id="Password"]'));
+  public loginButton = () => element(by.xpath('/html/body/div[1]/div/div/div/form/div[2]/div[3]/button'));
 
-    password() {
-        return element(by.xpath('//*[@id="Password"]'));
-    }
+  public async navigateTo(): Promise<any> {
+    return browser.get(`/#${this.loginUrlPath}`);
+  }
 
-    logIn() {
-        return element(by.xpath('/html/body/div[1]/div/div/div/form/div[2]/div[3]/button'));
-    }
+  public async getEmailText(): Promise<any> {
+    return this.emailInput().getText();
+  }
 
-    selectLocationCard() {
-        return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[2]/div[1]'));
-    }
+  public async setEmailText(text: string): Promise<any> {
+    const emailInput = this.emailInput();
+    await emailInput.clear();
+    await emailInput.sendKeys(text);
+  }
 
-    selectLocationBtn() {
-        return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[2]/div[1]/div[3]/a'));
-    }
+  public async getPasswordText(): Promise<any> {
+    return this.passwordInput().getText();
+  }
 
-    changeCheckout() {
-        return element(by.xpath('//*[@id="terminal"]/div/div'));
-    }
+  public async setPasswordText(text: string): Promise<any> {
+    const passwordInput = this.passwordInput();
+    await passwordInput.clear();
+    await passwordInput.sendKeys(text);
+  }
 
-    changeCheckoutText() {
-        return this.changeCheckout().getText();
-    }
-    closeBtn() {
-        return element(by.xpath('//*[@id="terminal"]/div/div/div[1]/button'));
-    }
+  public async login(): Promise<any> {
+    await this.loginButton().click();
+  }
+
 }
-
