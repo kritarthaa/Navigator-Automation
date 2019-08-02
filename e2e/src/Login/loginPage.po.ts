@@ -21,5 +21,16 @@ export class LoginPage {
     selectLocationBtn() {
         return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[2]/div[1]/div[3]/a'));
     }
+
+    changeCheckout() {
+        return element(by.xpath('//*[@id="terminal"]/div/div'));
+    }
+
+    changeCheckoutText() {
+        return this.changeCheckout().getText();
+      }
+     closeBtn() {
+          return element(by.xpath('//*[@id="terminal"]/div/div/div[1]/button'));
+      }
 }
 

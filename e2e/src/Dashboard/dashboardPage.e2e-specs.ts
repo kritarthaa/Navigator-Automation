@@ -18,6 +18,8 @@ describe('After Login, Page', () => {
     it('should be able to logIn successfully', async () => {
         // browser.ignoreSynchronization = true;
 
+
+        await page.dashboardBtn().click();
         await browser.wait(ExpectedConditions.urlContains('Dashboard'), 10000);
 
         await page.customerCard().isDisplayed();
