@@ -34,7 +34,8 @@ describe('Login, Page', () => {
         await browser.wait(ExpectedConditions.visibilityOf(page.changeCheckout()), 10000);
         await expect(page.changeCheckoutText()).toContain('Change Checkout Terminal');
         await page.closeBtn().click();
-         browser.waitForAngularEnabled(true);
+
+        browser.waitForAngularEnabled(true);
 
     });
 

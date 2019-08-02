@@ -28,9 +28,9 @@ export class LoginPage {
 
     changeCheckoutText() {
         return this.changeCheckout().getText();
-      }
-     closeBtn() {
-          return element(by.xpath('//*[@id="terminal"]/div/div/div[1]/button'));
-      }
+    }
+    closeBtn() {
+        return element(by.xpath('//*[@id="terminal"]/div/div/div[1]/button'));
+    }
 }
 

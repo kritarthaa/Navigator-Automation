@@ -9,7 +9,7 @@ describe('After Login, Page', () => {
     beforeEach(() => {
         page = new DashboardPage();
         browser.get('/');
-        // browser.ignoreSynchronization = true;
+
 
     });
 
@@ -22,12 +22,12 @@ describe('After Login, Page', () => {
         await page.dashboardBtn().click();
         await browser.wait(ExpectedConditions.urlContains('Dashboard'), 10000);
 
-        await page.customerCard().isDisplayed();
-        await page.salesCard().isDisplayed();
-        await page.totalOrdersCard().isDisplayed();
-        await page.terminalcard().isDisplayed();
-        await page.vendorCard().isDisplayed();
-        await page.todayStatCard().isDisplayed();
+        await page.customerCard().isPresent();
+        await page.salesCard().isPresent();
+        await page.totalOrdersCard().isPresent();
+        await page.terminalCard().isPresent();
+        await page.vendorCard().isPresent();
+        await page.todayStatCard().isPresent();
 
     });
 
