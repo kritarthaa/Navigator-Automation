@@ -12,19 +12,29 @@ describe('Login Page', () => {
     await browser.wait(ExpectedConditions.visibilityOf(app.login.passwordInput()));
   });
 
+  it('should send error when user does not exist', async () => {
+    await app.login.setEmailText('non-existent-email@email.com');
+    await app.login.setPasswordText('random-password');
+    await app.login.login();
+    await app.notification.waitForNotificationExistence();
+    expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongPasswordMessage);
+  });
+
 
   it('should show error when password is invalid', async () => {
-    await app.login.setEmailText(app.users[0].email);
-    await app.login.setPasswordText('Invalid username or password.');
+    await browser.waitForAngularEnabled(false);
+    await app.login.setEmailText(app.users[0].email)
+    await app.login.setPasswordText('invalid-password');
     await app.login.login();
     await app.notification.waitForNotificationExistence()
     expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongPasswordMessage);
   });
 
-  fit('should log the user in when the user exists', async () => {
+  it('should log the user in when the user exists', async () => {
+    await browser.waitForAngularEnabled(false);
     await app.login.setEmailText(app.users[0].email);
     await app.login.setPasswordText(app.users[0].password);
     await app.login.login();
-    await browser.wait(ExpectedConditions.urlContains(''));
+    await browser.wait(ExpectedConditions.urlContains('#'));
   });
-})
+});

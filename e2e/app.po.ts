@@ -1,7 +1,7 @@
-import { LoginPage } from '././src/Login/loginPage.po';
-import { DashboardPage } from '././src/Dashboard/dashboardPage.po';
+import { LoginPage } from './Login/loginPage.po';
+import { DashboardPage } from './Dashboard/dashboardPage.po';
 import { Notification } from './notification.po';
-
+import { LogoutPage } from './Logout/logout.po';
 
 export interface AutomationUser {
   email: string;
@@ -17,5 +17,6 @@ export class AppPage {
   public login = new LoginPage();
   public dashboard = new DashboardPage();
   public notification = new Notification();
+  public logout = new LogoutPage();
 
 }
