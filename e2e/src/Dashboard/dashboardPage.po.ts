@@ -10,6 +10,6 @@ export class DashboardPage {
   // Actions
 
   public async navigateTo(): Promise<any> {
-    return browser.get('/#/dashboard');
+    return browser.get('/dashboard');
   }
 }

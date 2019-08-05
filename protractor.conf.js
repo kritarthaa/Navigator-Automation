@@ -5,27 +5,35 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
   allScriptsTimeout: 11000,
+  restartBrowserBetweenTests: true,
   specs: [
-    "./e2e/**/*.e2e-spec.ts"
-
+    './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'chrome',
+    'chromeOptions': {
+        args: ["disable-infobars", "--start-maximized"]
+    }
   },
   directConnect: true,
-  baseUrl: 'https://nbs-qa.azurewebsites.net',
-  // ignoreSynchronization: true,
+  port: null,
+  baseUrl: 'https://nbs-qa.azurewebsites.net/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 300000,
-    print: function() {}
+    defaultTimeoutInterval: 250000,
+    print: () => {}
+  },
+  beforeLaunch: () => {
+    require('ts-node').register({
+      project: 'e2e/tsconfig.e2e.json'
+    });
   },
   onPrepare() {
-    // browser.waitForAngularEnabled(false)
-    require('ts-node').register({
-      project: require('path').join(__dirname, 'e2e/tsconfig.e2e.json')
-    });
+    browser.waitForAngularEnabled(false)
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+
+    // Run setup tests first
+    require("./e2e/setup.e2e.spec")
   }
 };
