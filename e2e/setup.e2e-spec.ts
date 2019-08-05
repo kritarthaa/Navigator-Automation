@@ -12,6 +12,7 @@ describe('Login Page', () => {
     await browser.wait(ExpectedConditions.visibilityOf(app.login.passwordInput()));
   });
 
+   //Test for Verify login with 
   it('should send error when user does not exist', async () => {
     await app.login.setEmailText('non-existent-email@email.com');
     await app.login.setPasswordText('random-password');

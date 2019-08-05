@@ -11,7 +11,7 @@ describe('Logout Page', () => {
     await(browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000))
   });
 
-  fit('should be able to login and should be logged out ', async () => {
+  it('should be able to login and should be logged out ', async () => {
     await app.login.setEmailText(app.users[0].email);
     await app.login.setPasswordText(app.users[0].password);
     await app.login.login();
