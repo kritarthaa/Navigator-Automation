@@ -7,7 +7,7 @@ export class LoginPage {
   public loginButton = () => element(by.xpath('/html/body/div[1]/div/div/div/form/div[2]/div[3]/button'));
 
   public async navigateTo(): Promise<any> {
-    return browser.get(`/#${this.loginUrlPath}`);
+    return browser.get(`#/${this.loginUrlPath}`);
   }
 
   public async getEmailText(): Promise<any> {

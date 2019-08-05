@@ -1,0 +1,30 @@
+import { browser, ExpectedConditions } from 'protractor';
+import { AppPage } from './app.po';
+
+describe('Login Page', () => {
+  let app: AppPage;
+
+  beforeEach(async () => {
+    app = new AppPage();
+    app.login.navigateTo();
+    await app.login.navigateTo();
+    await browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()));
+    await browser.wait(ExpectedConditions.visibilityOf(app.login.passwordInput()));
+  });
+
+
+  it('should show error when password is invalid', async () => {
+    await app.login.setEmailText(app.users[0].email);
+    await app.login.setPasswordText('Invalid username or password.');
+    await app.login.login();
+    await app.notification.waitForNotificationExistence()
+    expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongPasswordMessage);
+  });
+
+  fit('should log the user in when the user exists', async () => {
+    await app.login.setEmailText(app.users[0].email);
+    await app.login.setPasswordText(app.users[0].password);
+    await app.login.login();
+    await browser.wait(ExpectedConditions.urlContains(''));
+  });
+})

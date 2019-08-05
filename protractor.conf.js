@@ -34,6 +34,6 @@ exports.config = {
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
 
     // Run setup tests first
-    require("./e2e/setup.e2e.spec")
+    require("./e2e/setup.e2e-spec")
   }
 };
