@@ -1,7 +1,7 @@
 import { AppPage } from '../app.po';
 import { browser, ExpectedConditions } from 'protractor';
 
-describe('Dashboard Page', () => {
+fdescribe('Dashboard Page', () => {
   let app = new AppPage();
 
   beforeEach(async () => {

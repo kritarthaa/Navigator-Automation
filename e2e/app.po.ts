@@ -16,9 +16,10 @@ export class AppPage {
   ];
 
   public login = new LoginPage();
+  public pos = new PosPage();
+
   public dashboard = new DashboardPage();
   public notification = new Notification();
   public logout = new LogoutPage();
-  public pos = new PosPage();
 
 }
