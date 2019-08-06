@@ -5,7 +5,8 @@ import { async } from 'q';
 describe('After Clicking POS', () => {
     let app = new AppPage();
 
-
+//
+//
     beforeEach(async () => {
         app = new AppPage();
         await app.login.navigateTo();
