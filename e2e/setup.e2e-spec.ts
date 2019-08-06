@@ -6,7 +6,6 @@ describe('Login Page', () => {
 
   beforeEach(async () => {
     app = new AppPage();
-    app.login.navigateTo();
     await app.login.navigateTo();
     await browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()));
     await browser.wait(ExpectedConditions.visibilityOf(app.login.passwordInput()));
@@ -16,7 +15,7 @@ describe('Login Page', () => {
   it('should send error when user does not exist', async () => {
     await app.login.setEmailText('non-existent-email@email.com');
     await app.login.setPasswordText('random-password');
-    await app.login.login();
+    await app.login.clickLoginBtn();
     await app.notification.waitForNotificationExistence();
     expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongPasswordMessage);
   });
@@ -26,7 +25,7 @@ describe('Login Page', () => {
     await browser.waitForAngularEnabled(false);
     await app.login.setEmailText(app.users[0].email)
     await app.login.setPasswordText('invalid-password');
-    await app.login.login();
+    await app.login.clickLoginBtn();
     await app.notification.waitForNotificationExistence()
     expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongPasswordMessage);
   });
@@ -37,7 +36,6 @@ describe('Login Page', () => {
     await browser.waitForAngularEnabled(false);
     await app.login.setEmailText(app.users[0].email);
     await app.login.setPasswordText(app.users[0].password);
-    await app.login.login();
-    await browser.wait(ExpectedConditions.urlContains('#'));
+    await app.login.clickLoginBtn();
   });
 });

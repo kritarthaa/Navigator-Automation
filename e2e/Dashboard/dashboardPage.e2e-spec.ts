@@ -1,22 +1,27 @@
 import { AppPage } from '../app.po';
 import { browser, ExpectedConditions } from 'protractor';
 
-describe('Dashboard Page', () => {
+fdescribe('Dashboard Page', () => {
   let app = new AppPage();
 
   beforeEach(async () => {
     app = new AppPage();
     await app.login.navigateTo();
     await(browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000));
+    await app.validLogin(app.users[0].email, app.users[0].password);
+    await(browser.wait(ExpectedConditions.visibilityOf(app.notification.selectLocationCard())));
+    await(browser.wait(ExpectedConditions.visibilityOf(app.notification.selectLocationBtn())));
+    await app.notification.selectLocationBtn().click();
+    await(browser.wait(ExpectedConditions.visibilityOf(app.notification.closeBtn())));
+    await app.notification.closeBtn().click();
+
   });
 
-  it('Only navigates', async () => {
-    // Navigate to login page
+  fit('Only navigates', async () => {
     await browser.waitForAngularEnabled(false);
+    await(browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardBtn())));
+    await app.dashboard.dashboardBtn().click();
     await(browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardHeader), 10000));
-    // await app.login.setEmailText(app.users[0].email);
-    // await app.login.setPasswordText(app.users[0].password);
-    // await app.login.login();
   });
 
   it('Verify contents of dashboard page', async () => {
