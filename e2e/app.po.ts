@@ -4,6 +4,7 @@ import { Notification } from './notification.po';
 import { LogoutPage } from './Logout/logout.po';
 import { PosPage } from './POS/posPage.po';
 import { browser, ExpectedConditions } from 'protractor';
+import { CatalogPage } from './Catalog/catalog.po';
 
 export interface AutomationUser {
   email: string;
@@ -21,6 +22,7 @@ export class AppPage {
   public notification = new Notification();
   public logout = new LogoutPage();
   public pos = new PosPage();
+  public catalog = new CatalogPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);

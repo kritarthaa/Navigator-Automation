@@ -17,7 +17,7 @@ fdescribe('Dashboard Page', () => {
 
   });
 
-  fit('Only navigates', async () => {
+  it('Only navigates', async () => {
     await browser.waitForAngularEnabled(false);
     await(browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardBtn())));
     await app.dashboard.dashboardBtn().click();
@@ -27,7 +27,7 @@ fdescribe('Dashboard Page', () => {
   it('Verify contents of dashboard page', async () => {
 
     await browser.waitForAngularEnabled(false);
-
+    await app.dashboard.dashboardBtn().click();
     await(browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardHeader), 10000));
     await app.dashboard.customerCard.isPresent();
     await app.dashboard.salesCard.isPresent();
@@ -42,6 +42,8 @@ fdescribe('Dashboard Page', () => {
   it('Verify contents of todays stats', async () => {
 
     await browser.waitForAngularEnabled(false);
+    await(browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardBtn())));
+    await app.dashboard.dashboardBtn().click();
     await(browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardHeader), 10000));
     await app.dashboard.salesEarningTab.isDisplayed();
     await app.dashboard.bestSellerTab.isDisplayed();
