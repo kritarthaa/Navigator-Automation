@@ -12,7 +12,7 @@ describe('Login Page', () => {
     await browser.wait(ExpectedConditions.visibilityOf(app.login.passwordInput()));
   });
 
-   //Test for Verify login with 
+   //Test for Verify login with invalid credentials
   it('should send error when user does not exist', async () => {
     await app.login.setEmailText('non-existent-email@email.com');
     await app.login.setPasswordText('random-password');
@@ -30,6 +30,8 @@ describe('Login Page', () => {
     await app.notification.waitForNotificationExistence()
     expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongPasswordMessage);
   });
+
+  //Test for Verify login with valid credentials
 
   it('should log the user in when the user exists', async () => {
     await browser.waitForAngularEnabled(false);

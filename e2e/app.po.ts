@@ -2,6 +2,7 @@ import { LoginPage } from './Login/loginPage.po';
 import { DashboardPage } from './Dashboard/dashboardPage.po';
 import { Notification } from './notification.po';
 import { LogoutPage } from './Logout/logout.po';
+import { PosPage } from './POS/posPage.po';
 
 export interface AutomationUser {
   email: string;
@@ -18,5 +19,6 @@ export class AppPage {
   public dashboard = new DashboardPage();
   public notification = new Notification();
   public logout = new LogoutPage();
+  public pos = new PosPage();
 
 }
