@@ -4,6 +4,7 @@ import { Notification } from './notification.po';
 import { LogoutPage } from './Logout/logout.po';
 import { PosPage } from './POS/posPage.po';
 import { browser, ExpectedConditions } from 'protractor';
+import { CatalogPage } from './Catalog/catalog.po';
 
 export interface AutomationUser {
   email: string;
