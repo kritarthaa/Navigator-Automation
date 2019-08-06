@@ -18,11 +18,11 @@ export class AppPage {
   ];
 
   public login = new LoginPage();
+  public pos = new PosPage();
+
   public dashboard = new DashboardPage();
   public notification = new Notification();
   public logout = new LogoutPage();
-  public pos = new PosPage();
-  public catalog = new CatalogPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
