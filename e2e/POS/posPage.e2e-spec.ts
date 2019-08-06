@@ -2,7 +2,7 @@ import { browser, logging, element, by, protractor, ExpectedConditions } from 'p
 import { AppPage } from '../app.po';
 import { async } from 'q';
 
-describe('After Clicking POS', () => {
+fdescribe('After Clicking POS', () => {
     let app = new AppPage();
 
 //
@@ -10,8 +10,14 @@ describe('After Clicking POS', () => {
     beforeEach(async () => {
         app = new AppPage();
         await app.login.navigateTo();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000));
-        await app.login.login();
+        await(browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000));
+        await app.validLogin(app.users[0].email, app.users[0].password);
+        await(browser.wait(ExpectedConditions.visibilityOf(app.notification.selectLocationCard())));
+        await(browser.wait(ExpectedConditions.visibilityOf(app.notification.selectLocationBtn())));
+        await app.notification.selectLocationBtn().click();
+        await(browser.wait(ExpectedConditions.visibilityOf(app.notification.closeBtn())));
+        await app.notification.closeBtn().click();
+
     });
     it('should able to click POS on sidenav', async () => {
 
@@ -28,11 +34,18 @@ describe('After Clicking POS', () => {
         await app.pos.payButton.isPresent();
         await app.pos.removeButton.isPresent();
     });
-    it('should open pop up when clicked', async () => {
 
+
+
+    it('pop up opens when clicked add customer', async () => {
+
+        await app.pos.PosSpan.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
         await app.pos.addCustomer.click();
-    });
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
+        browser.sleep(35000);
 
+    });
 });
 
 afterEach(async () => {

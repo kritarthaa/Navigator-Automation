@@ -14,7 +14,7 @@ describe('Logout Page', () => {
   it('should be able to login and should be logged out ', async () => {
     await app.login.setEmailText(app.users[0].email);
     await app.login.setPasswordText(app.users[0].password);
-    await app.login.login();
+    await app.login.clickLoginBtn();
     await(browser.wait(ExpectedConditions.visibilityOf(app.logout.dropdownBelowUserName()), 10000));
     await app.logout.hoverUserName();
     await app.logout.clickLogoutBtn();

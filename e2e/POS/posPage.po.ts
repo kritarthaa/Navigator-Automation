@@ -47,4 +47,11 @@ export class PosPage {
     public get addCustomer(): ElementFinder {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[1]/div/div/div[2]/a'));
     }
+
+    public get customerTitle(): ElementFinder {
+        return element(by.xpath('/html/body/div[1]/div/div/div[1]/h6'));
+    }
+    public async navigateTo(): Promise<any> {
+        return browser.get('/#');
+      }
 }
