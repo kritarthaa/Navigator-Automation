@@ -2,7 +2,7 @@ import { browser, logging, element, by, protractor, ExpectedConditions } from 'p
 import { AppPage } from '../app.po';
 import { async } from 'q';
 
-fdescribe('After Clicking POS', () => {
+describe('After Clicking POS', () => {
     let app = new AppPage();
 
 //
@@ -37,15 +37,37 @@ fdescribe('After Clicking POS', () => {
 
 
 
-    it('pop up opens when clicked add customer', async () => {
+    it('verify pop up opens when clicked add customer', async () => {
 
         await app.pos.PosSpan.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
         await app.pos.addCustomer.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
-        browser.sleep(35000);
 
     });
+
+    fit('verify pop up close when click (X) icon', async () => {
+
+        await app.pos.PosSpan.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
+        await app.pos.addCustomer.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
+        await app.pos.closeIcon.click();
+
+    });
+
+    // fit('Verify Customer should be selected to purchase product', async () => {
+
+    //     await app.pos.PosSpan.click();
+    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
+    //     await app.pos.addCustomer.click();
+    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
+
+    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.linkToOrder));
+    //     // browser.sleep(1000);
+    //     // await app.pos.linkToOrder().click();
+
+    // });
 });
 
 afterEach(async () => {

@@ -44,12 +44,25 @@ export class PosPage {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[7]/div[1]/a'));
     }
 
+
+    // add customer
     public get addCustomer(): ElementFinder {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[1]/div/div/div[2]/a'));
     }
 
     public get customerTitle(): ElementFinder {
         return element(by.xpath('/html/body/div[1]/div/div/div[1]/h6'));
+    }
+
+    public get closeIcon(): ElementFinder {
+        return element(by.xpath('/html/body/div[1]/div/div/div[1]/button/span'));
+    }
+
+    public get searchBarCustomer(): ElementFinder {
+        return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[1]/input'));
+    }
+    public get linkToOrder(): ElementFinder {
+        return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]/div[1]/div[3]/a'));
     }
     public async navigateTo(): Promise<any> {
         return browser.get('/#');
