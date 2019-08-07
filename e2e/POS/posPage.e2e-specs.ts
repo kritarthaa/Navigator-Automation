@@ -27,11 +27,28 @@ describe('After Clicking POS', () => {
         await app.pos.removeButton.isPresent();
     });
 
-    // it('pop up opens when clicked add customer', async () => {
+    fit('verify pop up close when click (X) icon', async () => {
 
-    //     await page.addCustomer().click();
-    //     await page.popupCustomer().isPresent();
-    // })
+        await app.pos.PosSpan.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
+        await app.pos.addCustomer.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
+        await app.pos.closeIcon.click();
+
+    });
+
+    // fit('Verify Customer should be selected to purchase product', async () => {
+
+    //     await app.pos.PosSpan.click();
+    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
+    //     await app.pos.addCustomer.click();
+    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
+
+    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.linkToOrder));
+    //     // browser.sleep(1000);
+    //     // await app.pos.linkToOrder().click();
+
+    // });
 });
 
 afterEach(async () => {
