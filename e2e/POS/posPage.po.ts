@@ -55,7 +55,7 @@ export class PosPage {
     }
 
     public get closeIcon(): ElementFinder {
-        return element(by.xpath('/html/body/div[1]/div/div/div[1]/button/span'));
+        return element(by.xpath('/html/body/div[1]/div/div/div[1]/button'));
     }
 
     public get searchBarCustomer(): ElementFinder {

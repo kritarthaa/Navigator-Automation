@@ -10,8 +10,10 @@ describe('After Clicking POS', () => {
         app = new AppPage();
         await app.login.navigateTo();
         await (browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000));
+        await browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()));
+        await browser.wait(ExpectedConditions.visibilityOf(app.login.passwordInput()));
     });
-    it('should able to click POS on sidenav', async () => {
+    fit('should able to click POS on sidenav', async () => {
 
         await app.pos.PosSpan.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
@@ -27,13 +29,13 @@ describe('After Clicking POS', () => {
         await app.pos.removeButton.isPresent();
     });
 
-    fit('verify pop up close when click (X) icon', async () => {
+    it('verify pop up close when click (X) icon', async () => {
 
         await app.pos.PosSpan.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
         await app.pos.addCustomer.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.customerTitle));
-        await app.pos.closeIcon.click();
+        // await app.pos.closeIcon.click();
 
     });
 
