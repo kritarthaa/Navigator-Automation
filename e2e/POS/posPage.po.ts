@@ -44,7 +44,7 @@ export class PosPage {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[7]/div[1]/a'));
     }
 
-    //
+    // 
 
     public get addCustomer(): ElementFinder {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[1]/div/div/div[2]/a'));
@@ -59,13 +59,67 @@ export class PosPage {
     }
 
     public get searchBarCustomer(): ElementFinder {
-        return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[1]/input'));
+        return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[1]/input'));
     }
     public get linkToOrder(): ElementFinder {
-        return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]/div[1]/div[3]/a'));
+        return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[3]/div[1]/div[3]/a'));
+    }
+    public linkOrderget() {
+       return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]/div[1]/div[3]'));
+    //    return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]')).first().all(by.css('div')).last().getText();
+
+    }
+    public get customerfromPopup(): ElementFinder {
+        return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/a'));
+    }
+
+
+    // top bar
+
+    public get favourite(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[4]/a/div'));
+    }
+    public get favouriteContent(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[2]/div[3]/div'));
+    }
+    public get cannabis(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[3]/a'));
+    }
+    public get all(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[1]/a'));
+    }
+    public get regular(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[2]/a'));
+    }
+    public get locationIcon(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[7]/a/i'));
+    }
+    public get displayScreen(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[8]/a/i'));
+    }
+    public get qty(): ElementFinder {
+        return element(by.xpath('/html/body/div[2]/div/div[2]/div/div[1]/table/thead/tr/th[1]'));
+    }
+
+
+    // Cart
+    public get payButtonCart(): ElementFinder {
+        return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[7]/div[2]/button'));
+    }
+    public get pleaseAddCartNotification(): ElementFinder {
+        return element(by.xpath('/html/body/div[12]/div'));
+
+    }
+    public get addProducts(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[2]/div[3]/div[1]/a/div/div[2]'));
+    }
+    public get cartItem(): ElementFinder {
+        return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[2]/div/div/div/div[2]/div[1]'));
+    }
+    public get itemTitle(): ElementFinder {
+        return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div'));
     }
     public async navigateTo(): Promise<any> {
         return browser.get('/#');
       }
-
 }

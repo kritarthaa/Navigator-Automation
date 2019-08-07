@@ -4,8 +4,12 @@ import { relative } from 'path';
 export class DashboardPage {
   // Elements
 
+  public dashboardBtn(): ElementFinder {
+    return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div[2]/div[1]/a'));
+  }
+
   public get dashboardHeader(): ElementFinder {
-    return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[1]/h6'))
+    return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[1]/h6'));
   }
 
   public get salesCard(): ElementFinder {

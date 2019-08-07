@@ -10,9 +10,9 @@ export class LoginPage {
     return browser.get(`#/${this.loginUrlPath}`);
   }
 
-  public async getEmailText(): Promise<any> {
-    return this.emailInput().getText();
-  }
+  // public async getEmailText(): Promise<any> {
+  //   return this.emailInput().getText();
+  // }
 
   public async setEmailText(text: string): Promise<any> {
     const emailInput = this.emailInput();
@@ -20,9 +20,9 @@ export class LoginPage {
     await emailInput.sendKeys(text);
   }
 
-  public async getPasswordText(): Promise<any> {
-    return this.passwordInput().getText();
-  }
+  // public async getPasswordText(): Promise<any> {
+  //   return this.passwordInput().getText();
+  // }
 
   public async setPasswordText(text: string): Promise<any> {
     const passwordInput = this.passwordInput();
@@ -30,7 +30,7 @@ export class LoginPage {
     await passwordInput.sendKeys(text);
   }
 
-  public async login(): Promise<any> {
+  public async clickLoginBtn(): Promise<any> {
     await this.loginButton().click();
   }
 
