@@ -2,7 +2,7 @@ import { browser, logging, element, by, protractor, ExpectedConditions } from 'p
 import { AppPage } from '../app.po';
 import { async } from 'q';
 
-fdescribe('After Clicking POS', () => {
+describe('After Clicking POS', () => {
     let app = new AppPage();
 
 //

@@ -4,7 +4,7 @@ import { relative } from 'path';
 export class CatalogPage {
     //Elements
 
-    public catalogBtn(): ElementFinder {
+    public get catalogBtn(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[2]/div[2]/ul/li[3]/a'));
     }
 
