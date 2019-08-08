@@ -21,7 +21,15 @@ export class Notification {
   public closeBtn(): ElementFinder {
     return element(by.xpath('//*[@id="terminal"]/div/div/div[1]/button'));
   }
- 
+
+  public get deleteProductCard(): ElementFinder {
+    return element(by.xpath('//*[@id="removeProductModal"]/div/div'));
+  }
+
+  public get removeProduct(): ElementFinder {
+    return element(by.xpath('//*[@id="removeProductModal"]/div/div/div[3]/button[2]'));
+  }
+
   // Actions
 
   public async waitForNotificationExistence(): Promise<void> {
@@ -31,7 +39,5 @@ export class Notification {
   public async getNotificationMessage(): Promise<any> {
     return this.notificationElement.getText();
   }
-
-
 
 }
