@@ -5,6 +5,14 @@ import { LogoutPage } from './Logout/logout.po';
 import { PosPage } from './POS/posPage.po';
 import { browser, ExpectedConditions } from 'protractor';
 import { CatalogPage } from './Catalog/catalog.po';
+import { CustomersPage } from './Customers/customers.po';
+import { InventoryPage } from './Inventory/inventory.po';
+import { MarketingPage } from './Marketing/marketing.po';
+import { ReportsPage } from './Reports/reports.po';
+import { SalesPage } from './Sales/sales.po';
+import { SettingsPage } from './Settings/settings.po';
+import { VendorsPage } from './Vendors/vendors.po';
+
 
 export interface AutomationUser {
   email: string;
@@ -23,6 +31,13 @@ export class AppPage {
   public dashboard = new DashboardPage();
   public notification = new Notification();
   public logout = new LogoutPage();
+  public customers = new CustomersPage();
+  public inventory = new InventoryPage();
+  public marketing = new MarketingPage();
+  public reports = new ReportsPage();
+  public sales = new SalesPage();
+  public settings = new SettingsPage();
+  public vendors = new VendorsPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
