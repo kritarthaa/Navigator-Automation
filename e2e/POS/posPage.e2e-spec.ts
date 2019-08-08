@@ -44,18 +44,18 @@ describe('After Clicking POS', () => {
 
     });
 
-    // it('Verify Customer should be selected to purchase product', async () => {
+    // POS-> Add Customer-> Link To Order: Verify Customer should be selected to purchase product
 
-    //     await app.pos.PosSpan.click();
-    //     await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
-    //     await app.pos.addCustomer.click();
-    //     // await browser.wait(ExpectedConditions.visibilityOf(app.pos.linkOrderget));
-    //     console.log(app.pos.linkOrderget);
-    //     // await app.pos.linkOrderget().click();
-    //     browser.sleep(500000);
+    it('Verify Customer should be selected to purchase product', async () => {
+
+        await app.pos.PosSpan.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
+        await app.pos.addCustomer.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.CustomerList));
+        await app.pos.linkToOrderFirst.click();
 
 
-    // });
+    });
 
     it('Verify POS page top bar item is clickable and show its specific information', async () => {
         await app.pos.PosSpan.click();
@@ -69,29 +69,41 @@ describe('After Clicking POS', () => {
 
      });
 
-    // need working
-    it('Verify user wont be able to pay until customer is added', async () => {
+    // POs-> Product list -> Canabis Product:Verify notification appears for adding cannabis product without assigning customer
+
+    it('Verify notification appears for adding cannabis product without assigning customer', async () => {
 
         await app.pos.PosSpan.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
-        await app.pos.payButtonCart;
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.wholeProductList));
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.singleProduct));
+        await app.pos.plusIconFirst.click();
     });
 
-    // need workig
-
-    it('Verify to add product on cart', async () => {
+    // POS -> Discount: Verify pop up open when click discount
+    it('Verify pop up open when click discount', async () => {
 
         await app.pos.PosSpan.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
-        await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProducts));
-        await app.pos.addProducts;
-        browser.sleep(5000);
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.wholeProductList), 1000);
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.discountButton));
+        await app.pos.discountButton.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.discountPopupTitle));
+    });
 
-        await browser.wait(ExpectedConditions.visibilityOf(app.pos.itemTitle));
-        browser.sleep(5000);
+    // POS -> Discount: Verify discount pop up close when clicked cancel
+    it('Verify discount pop up close', async () => {
+
+        await app.pos.PosSpan.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.wholeProductList), 80000);
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.discountButton));
+        await app.pos.discountButton.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.discountPopupTitle));
+        await browser.wait(ExpectedConditions.visibilityOf(app.pos.discountPopupClose), 80000);
+        await app.pos.discountPopupClose.click();
     });
 });
-
 
 
 afterEach(async () => {

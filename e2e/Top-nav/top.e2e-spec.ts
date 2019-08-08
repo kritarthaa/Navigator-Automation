@@ -18,13 +18,20 @@ describe('On Top nav bar', () => {
 
     });
 
-    fit('Verify clicking on queue icon open pop up', async () => {
+    // Top-nav -> Queue : Verify queue pop up open and close
+    it('Verify queue pop up open and close', async () => {
 
     await app.topnav.queueLink.click();
-    // await browser.wait(ExpectedConditions.visibilityOf(app.topnav.getOptions()));
-    browser.findElement(by.className('close'));
-    expect(element(by.tagName('span')).getText()).toEqual(element(by.xpath('/html/body/div[2]/div/div/div[1]/button/span')));
-    browser.sleep(5000);
+    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.wholePopup));
+    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.closeIcon));
+    await app.topnav.closeIcon.click();
+  });
+
+  // Top-nav -> Orders: Verify clicking on Orders icon leads to Sales-> orders page
+    fit('Verify clicking on Orders icon leads to Sales-> orders page ', async () => {
+
+    await app.topnav.orderLink.click();
+    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.orderTableList));
   });
 });
 

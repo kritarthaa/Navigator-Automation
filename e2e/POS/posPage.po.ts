@@ -44,7 +44,7 @@ export class PosPage {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[7]/div[1]/a'));
     }
 
-    // 
+    // Add customer from cart
 
     public get addCustomer(): ElementFinder {
         return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[1]/div/div/div[2]/a'));
@@ -61,13 +61,12 @@ export class PosPage {
     public get searchBarCustomer(): ElementFinder {
         return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[1]/input'));
     }
-    public get linkToOrder(): ElementFinder {
+    public get linkToOrderFirst(): ElementFinder {
         return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[3]/div[1]/div[3]/a'));
     }
-    public linkOrderget() {
-       return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]/div[1]/div[3]'));
-    //    return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]')).first().all(by.css('div')).last().getText();
-
+    
+    public get CustomerList() {
+        return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[3]'));
     }
     public get customerfromPopup(): ElementFinder {
         return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[3]/div[1]/div[2]/a'));
@@ -102,23 +101,31 @@ export class PosPage {
     }
 
 
-    // Cart
-    public get payButtonCart(): ElementFinder {
-        return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[7]/div[2]/button'));
-    }
-    public get pleaseAddCartNotification(): ElementFinder {
-        return element(by.xpath('/html/body/div[12]/div'));
+    // Product list
 
+    public get wholeProductList(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[2]/div[3]'));
     }
-    public get addProducts(): ElementFinder {
+    public get singleProduct(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[2]/div[3]/div[1]/a/div/div[2]'));
     }
-    public get cartItem(): ElementFinder {
-        return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[2]/div/div/div/div[2]/div[1]'));
+    public get plusIconFirst(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[2]/div[3]/div[1]/a/div/div[2]/span'));
     }
-    public get itemTitle(): ElementFinder {
-        return element(by.xpath('/html/body/div[2]/div/div/div[2]/div/div[1]/div/div/div/div[2]/div[1]/div'));
+
+    // Discount
+    public get discountButton(): ElementFinder {
+        return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[1]/div/a'));
     }
+
+    public get discountPopupTitle(): ElementFinder {
+        return element(by.xpath('//*[@id="cart-panel"]/div[1]/div/div/div/div[3]/div/div[2]/div[2]/h3'));
+    }
+
+    public get discountPopupClose(): ElementFinder {
+        return element(by.xpath('//*[@id="cartDiscountPopover"]/div[4]/button[1]'));
+    }
+
     public async navigateTo(): Promise<any> {
         return browser.get('/#');
       }

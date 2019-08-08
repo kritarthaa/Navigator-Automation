@@ -48,6 +48,22 @@ export class DashboardPage {
     return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[1]/div[3]/div[1]/div/div/div/div[1]/ul[1]/li[2]/a'));
   }
 
+  public get salesToday(): ElementFinder {
+    return element(by.xpath('//*[@id="chart_sales_today"]'));
+  }
+
+  public get bestSeller(): ElementFinder {
+    return element(by.xpath('//*[@id="chart_bestSeller"]'));
+  }
+
+  public get mostRecentOrdersHeader(): ElementFinder {
+    return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[2]/div/div/h6'));
+  }
+
+  public get viewOrderBtn(): ElementFinder {
+    return element(by.xpath('//*[@id="topTenRecentOrders"]/tr[2]/td[4]/a'))
+  }
+
   // Actions
 
   public async navigateTo(): Promise<any> {
