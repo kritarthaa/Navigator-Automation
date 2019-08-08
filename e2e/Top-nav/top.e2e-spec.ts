@@ -21,9 +21,10 @@ describe('On Top nav bar', () => {
     fit('Verify clicking on queue icon open pop up', async () => {
 
     await app.topnav.queueLink.click();
-    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.queueCustomerTitle));
-    console.log(app.topnav.queueCustomerTitle);
-    // await app.topnav.queueCustomerTitle.click();
+    // await browser.wait(ExpectedConditions.visibilityOf(app.topnav.getOptions()));
+    browser.findElement(by.className('close'));
+    expect(element(by.tagName('span')).getText()).toEqual(element(by.xpath('/html/body/div[2]/div/div/div[1]/button/span')));
+    browser.sleep(5000);
   });
 });
 
