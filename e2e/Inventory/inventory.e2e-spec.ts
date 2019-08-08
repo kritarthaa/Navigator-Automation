@@ -56,7 +56,7 @@ describe('Inventory Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.notification.importInventoryPopup), 10000));
     });
 
-    it('Verify the list item appears with respect to corresponding location selected', async () => {
+    it('Verify download csv button', async () => {
         await browser.waitForAngularEnabled(false);
         await app.inventory.inventoryDropdownBtn.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryBtn), 10000));
@@ -68,4 +68,108 @@ describe('Inventory Page', () => {
 
 
     });
+
+    // verify we can add add new inventory items with required data
+
+    it('verify add add new inventory items', async () => {
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryBtn), 10000));
+        await app.inventory.inventoryBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryHeader), 10000));
+        await app.inventory.intakeInventoryBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryIntakeForm), 10000));
+
+    });
+
+    // Verify user can edit, update and delete
+
+    it('Verify update inventory', async () => {
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryBtn), 10000));
+        await app.inventory.inventoryBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryTable), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.updateInventoryBtn), 10000));
+        await app.inventory.updateInventoryBtn.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.inventory.updateInventoryForm), 10000);
+
+    });
+
+    it('Verify delete inventory item', async () => {
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryBtn), 10000));
+        await app.inventory.inventoryBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.inventoryTable), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.deleteInventoryBtn), 10000));
+        await app.inventory.deleteInventoryBtn.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.notification.deletePopup), 10000);
+    });
+
+    // Verify list of Locations appears with ADD Location option
+
+    it('Verify location page', async () => {
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationsBtn), 10000));
+        await app.inventory.locationsBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationHeader), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationLists), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.addLocationBtn), 10000));
+        await app.inventory.addLocationBtn.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.inventory.addLocationForm), 10000);
+    });
+
+    // Verify user can update and delete the location added
+
+    it('Verify delete location', async () => {
+
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationsBtn), 10000));
+        await app.inventory.locationsBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationHeader), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationLists), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.editLocationBtn), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.deleteLocationBtn), 10000));
+        await app.inventory.deleteLocationBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.notification.deletePopup), 10000));
+
+    });
+
+    it('Verify edit location ', async () => {
+
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationsBtn), 10000));
+        await app.inventory.locationsBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationHeader), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.locationLists), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.editLocationBtn), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.deleteLocationBtn), 10000));
+        await app.inventory.editLocationBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.editLocationForm), 10000));
+
+    });
+
+
+    // Verify user can add and view the list of warehouses available
+
+    it('Verify Warehouse page ', async () => {
+
+        await browser.waitForAngularEnabled(false);
+        await app.inventory.inventoryDropdownBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.warehouseBtn), 10000));
+        await app.inventory.warehouseBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.warehouseHeader), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.addWarehouseForm), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.availableWarehouseList), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.searchWarehouse), 10000));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.inventory.deleteWarehouseBtn), 10000));
+        await app.inventory.deleteWarehouseBtn.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.notification.deletePopup), 10000));
+
+    });
+
 });

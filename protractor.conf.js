@@ -12,7 +12,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {
-        args: ["disable-infobars", "--start-maximized"]
+        args: ["disable-infobars", "--start-maximized", "--window-size=1630,963"]
     }
   },
   directConnect: true,

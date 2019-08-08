@@ -33,6 +33,10 @@ export class Notification {
     return element(by.xpath('//*[@id="customerInfo"]/div/div'));
   }
 
+  public get deletePopup(): ElementFinder {
+    return element(by.xpath('/html/body/div[12]/div/div'));
+  }
+
   // Actions
 
   public async waitForNotificationExistence(): Promise<void> {
