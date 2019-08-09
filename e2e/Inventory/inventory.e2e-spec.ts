@@ -16,6 +16,7 @@ describe('Inventory Page', () => {
         await app.notification.closeBtn().click();
 
     });
+    //
 
     // Verify contents of inventory page
 
