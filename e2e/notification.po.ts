@@ -29,6 +29,13 @@ export class Notification {
   public get removeProduct(): ElementFinder {
     return element(by.xpath('//*[@id="removeProductModal"]/div/div/div[3]/button[2]'));
   }
+  public get importInventoryPopup(): ElementFinder {
+    return element(by.xpath('//*[@id="customerInfo"]/div/div'));
+  }
+
+  public get deletePopup(): ElementFinder {
+    return element(by.xpath('/html/body/div[12]/div/div'));
+  }
 
   // Actions
 
