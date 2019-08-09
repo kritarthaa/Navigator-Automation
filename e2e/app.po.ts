@@ -3,6 +3,7 @@ import { DashboardPage } from './Dashboard/dashboardPage.po';
 import { Notification } from './notification.po';
 import { LogoutPage } from './Logout/logout.po';
 import { PosPage } from './POS/posPage.po';
+import { TopNavPage } from './Top-nav/top.po';
 import { browser, ExpectedConditions } from 'protractor';
 import { CatalogPage } from './Catalog/catalog.po';
 import { CustomersPage } from './Customers/customers.po';
@@ -38,6 +39,7 @@ export class AppPage {
   public sales = new SalesPage();
   public settings = new SettingsPage();
   public vendors = new VendorsPage();
+  public topnav = new TopNavPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
