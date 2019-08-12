@@ -64,7 +64,7 @@ export class PosPage {
     public get linkToOrderFirst(): ElementFinder {
         return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[3]/div[1]/div[3]/a'));
     }
-    
+
     public get CustomerList() {
         return element(by.xpath('/html/body/div[1]/div/div/div[2]/div/div[3]'));
     }
@@ -75,19 +75,19 @@ export class PosPage {
 
     // top bar
 
-    public get favourite(): ElementFinder {
+    public get favouriteTab(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[4]/a/div'));
     }
     public get favouriteContent(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[2]/div[3]/div'));
     }
-    public get cannabis(): ElementFinder {
+    public get cannabisTab(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[3]/a'));
     }
-    public get all(): ElementFinder {
+    public get allTab(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[1]/a'));
     }
-    public get regular(): ElementFinder {
+    public get regularTab(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div/div/div[1]/div/div/ul/li[2]/a'));
     }
     public get locationIcon(): ElementFinder {
