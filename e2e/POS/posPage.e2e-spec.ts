@@ -60,11 +60,11 @@ describe('After Clicking POS', () => {
     it('Verify POS page top bar item is clickable and show its specific information', async () => {
         await app.pos.PosSpan.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.addProduct));
-        await app.pos.all.click();
-        await app.pos.favourite.click();
+        await app.pos.allTab.click();
+        await app.pos.favouriteTab.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.pos.favouriteContent));
-        await app.pos.cannabis.click();
-        await app.pos.regular.click();
+        await app.pos.cannabisTab.click();
+        await app.pos.regularTab.click();
         await app.pos.locationIcon.click();
 
      });
