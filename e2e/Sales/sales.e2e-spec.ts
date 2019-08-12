@@ -45,7 +45,7 @@ describe('Sales Page', () => {
 
     // Verify search option works when enter Customer name
 
-    fit('Verify contents of Sales', async () => {
+    it('Verify contents of Sales', async () => {
         await browser.waitForAngularEnabled(false);
         await browser.wait(ExpectedConditions.visibilityOf(app.sales.salesDropdownBtn));
         await app.sales.salesDropdownBtn.click();
@@ -54,7 +54,6 @@ describe('Sales Page', () => {
         await browser.wait(ExpectedConditions.urlContains('order'));
         await browser.wait(ExpectedConditions.visibilityOf(app.sales.searchOrder), 10000);
         await app.sales.searchOrder.sendKeys('1 Old Man');
-        browser.sleep(10000);
         await expect(app.sales.firstCustomer().getText()).toContain('1 Old Man');
 
     });
