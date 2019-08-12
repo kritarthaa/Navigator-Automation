@@ -17,7 +17,7 @@ describe('Sales Page', () => {
 
     });
 
-    // Verify when clicking Sales dropdown appears
+    // Verify when clicking Sales Dropdown appears
 
     it('Verify contents of Sales', async () => {
         await browser.waitForAngularEnabled(false);
