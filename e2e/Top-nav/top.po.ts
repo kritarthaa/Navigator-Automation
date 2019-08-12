@@ -10,7 +10,7 @@ export class TopNavPage {
     }
 
     public get wholePopup(): ElementFinder {
-        return element.all(by.xpath('/html/body/div[2]/div/div')).first();
+         return element.all(by.xpath('/html/body/div[2]/div/div')).first();
     }
     public get closeIcon(): ElementFinder {
         return element(by.xpath('/html/body/div[2]/div/div/div[1]/button'));
