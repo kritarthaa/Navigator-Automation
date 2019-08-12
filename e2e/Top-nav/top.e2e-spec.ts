@@ -28,7 +28,7 @@ describe('On Top nav bar', () => {
   });
 
   // Top-nav -> Orders: Verify clicking on Orders icon leads to Sales-> orders page
-    fit('Verify clicking on Orders icon leads to Sales-> orders page ', async () => {
+    it('Verify clicking on Orders icon leads to Sales-> orders page ', async () => {
 
     await app.topnav.orderLink.click();
     await browser.wait(ExpectedConditions.visibilityOf(app.topnav.orderTableList));
