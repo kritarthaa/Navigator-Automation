@@ -23,10 +23,9 @@ describe('On Top nav bar', () => {
 
     await app.topnav.queueLink.click();
 
-    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.wholePopup));
+    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.CustomerListwholePopup));
 
     await browser.wait(ExpectedConditions.visibilityOf(app.topnav.closeIcon));
-    console.log('3');
 
     await app.topnav.closeIcon.click();
   });

@@ -132,4 +132,7 @@ export class CustomersPage {
     public get emailInput(): ElementFinder {
         return element(by.xpath("//input[@id='EMail']"));
     }
+    public get previousButton(): ElementFinder {
+        return element(by.xpath("//div[contains(@class,'cardX mb-4')]//button[contains(@class,'btn btn-white btn-slider-prev slick-arrow')][contains(text(),'Previous')]"));
+    }
 }

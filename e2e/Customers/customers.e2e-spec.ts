@@ -204,4 +204,24 @@ describe('Customers Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.lastNameForNewCustomer)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.continueButton)));
     });
+
+    fit('Verify the first pop up components of new customer', async () => {
+
+        await app.customers.customerSidenav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customersLink)));
+        await app.customers.customersLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.newCustomerButton)));
+        await app.customers.newCustomerButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.continueButton)));
+        await app.customers.continueButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.secondPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.phoneInput)));
+        await app.customers.phoneInput.sendKeys('9333');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.emailInput)));
+        await app.customers.emailInput.sendKeys('ems@f.com');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.previousButton)));
+        await app.customers.previousButton.click();
+        browser.sleep(5000);
+    });
 });
