@@ -293,7 +293,6 @@ describe('Customers Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.nextButtonOFThirdPopUP)));
         await app.customers.nextButtonOFThirdPopUP.click();
 
-        browser.sleep(5000);
     });
 });
 
