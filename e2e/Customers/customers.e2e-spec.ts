@@ -205,7 +205,9 @@ describe('Customers Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.continueButton)));
     });
 
-    fit('Verify the first pop up components of new customer', async () => {
+    // Customers -> Customers : Verify the second pop up components of new customer
+
+    it('Verify the second pop up components of new customer', async () => {
 
         await app.customers.customerSidenav.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
@@ -217,11 +219,81 @@ describe('Customers Page', () => {
         await app.customers.continueButton.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.secondPopUpTitle)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.phoneInput)));
-        await app.customers.phoneInput.sendKeys('9333');
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.emailInput)));
-        await app.customers.emailInput.sendKeys('ems@f.com');
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.previousButton)));
-        await app.customers.previousButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.streetAddressInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.cityInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.nextButtonOfSecondPopUP)));
+    });
+
+    // Customers -> Customers : Verify the third pop up components of new customer
+
+    it('Verify the third pop up components of new customer', async () => {
+
+        await app.customers.customerSidenav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customersLink)));
+        await app.customers.customersLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.newCustomerButton)));
+        await app.customers.newCustomerButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.firstName)));
+        await app.customers.firstName.sendKeys('kumar');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.lastNameForNewCustomer)));
+        await app.customers.lastNameForNewCustomer.sendKeys('pun');
+
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.continueButton)));
+        await app.customers.continueButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.secondPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.phoneInput)));
+        await app.customers.phoneInput.sendKeys('+977 9819428228');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.emailInput)));
+        await app.customers.emailInput.sendKeys('kpun@sevadev.com');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.streetAddressInput)));
+        await app.customers.streetAddressInput.sendKeys('Manglapur');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.cityInput)));
+        await app.customers.cityInput.sendKeys('Butwal');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.nextButtonOfSecondPopUP)));
+        await app.customers.nextButtonOfSecondPopUP.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.thirdPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.previousButtonOFThirdPopUP)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.nextButtonOFThirdPopUP)));
+        await app.customers.nextButtonOFThirdPopUP.click();
+    });
+
+    // Customers -> Customers : Verify the fourth pop up components of new customer
+
+    fit('Verify the fourth pop up components of new customer', async () => {
+
+        await app.customers.customerSidenav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customersLink)));
+        await app.customers.customersLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.newCustomerButton)));
+        await app.customers.newCustomerButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.firstName)));
+        await app.customers.firstName.sendKeys('kumar');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.lastNameForNewCustomer)));
+        await app.customers.lastNameForNewCustomer.sendKeys('pun');
+
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.continueButton)));
+        await app.customers.continueButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.secondPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.phoneInput)));
+        await app.customers.phoneInput.sendKeys('+977 9819428228');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.emailInput)));
+        await app.customers.emailInput.sendKeys('kpun@sevadev.com');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.streetAddressInput)));
+        await app.customers.streetAddressInput.sendKeys('Manglapur');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.cityInput)));
+        await app.customers.cityInput.sendKeys('Butwal');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.nextButtonOfSecondPopUP)));
+        await app.customers.nextButtonOfSecondPopUP.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.thirdPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.previousButtonOFThirdPopUP)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.nextButtonOFThirdPopUP)));
+        await app.customers.nextButtonOFThirdPopUP.click();
+
         browser.sleep(5000);
     });
 });
+

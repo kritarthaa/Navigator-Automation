@@ -135,4 +135,36 @@ export class CustomersPage {
     public get previousButton(): ElementFinder {
         return element(by.xpath("//div[contains(@class,'cardX mb-4')]//button[contains(@class,'btn btn-white btn-slider-prev slick-arrow')][contains(text(),'Previous')]"));
     }
+    public get streetAddressInput(): ElementFinder {
+        return element(by.xpath("//input[@id='Address1']"));
+    }
+    public get cityInput(): ElementFinder {
+        return element(by.xpath("//input[@id='City']"));
+    }
+    public get nextButtonOfSecondPopUP(): ElementFinder {
+        return element(by.xpath("//button[contains(@class,'basic-info')][contains(text(),'Next')]"));
+    }
+
+    // New customer third pop up
+    public get thirdPopUpTitle(): ElementFinder {
+        return element(by.xpath("//h5[contains(text(),'Customer Group')]"));
+    }
+    public get previousButtonOFThirdPopUP(): ElementFinder {
+        return element(by.xpath('//*[@id="CustomerSlider"]/div/div/div[3]/div/div/div[3]/button[1]'));
+    }
+    public get nextButtonOFThirdPopUP(): ElementFinder {
+        return element(by.xpath("//div[contains(@class,'bxslide slide-enable slick-slide slick-current slick-active')]//button[contains(@class,'slick-arrow')][contains(text(),'Next')]"));
+    }
+
+    // New customer fourth pop up
+
+    public get fourthPopUpTitle(): ElementFinder {
+        return element(by.xpath("//h5[contains(text(),'Additional Notes')]"));
+    }
+    public get noteOne(): ElementFinder {
+        return element(by.xpath("//textarea[@id='AddNote1']"));
+    }
+    public get previousButtonOFFourthPopUp(): ElementFinder {
+        return element(by.xpath('//*[@id="CustomerSlider"]/div/div/div[4]/div/div/div[5]/button[1]'));
+    }
 }
