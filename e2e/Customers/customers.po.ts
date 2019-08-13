@@ -108,8 +108,28 @@ export class CustomersPage {
         return element(by.xpath('//*[@id="removeEntryModal"]/div/div/div[3]/button[2]'));
     }
 
-    // New custome first page
+    // New customer first pop up
     public get chooseUserTypes(): ElementFinder {
         return element(by.xpath("//label[contains(text(),'Choose User Type')]"));
+    }
+    public get firstName(): ElementFinder {
+        return element(by.xpath("//input[@id='FirstName']"));
+    }
+    public get lastNameForNewCustomer(): ElementFinder {
+        return element(by.xpath("//input[@id='LastName']"));
+    }
+    public get continueButton(): ElementFinder {
+        return element(by.xpath("//button[contains(text(),'Continue')]"));
+    }
+
+    // New customer second pop up
+    public get secondPopUpTitle(): ElementFinder {
+        return element(by.xpath("//h5[contains(text(),'Customer Information')]"));
+    }
+    public get phoneInput(): ElementFinder {
+        return element(by.xpath("//input[@id='Phone']"));
+    }
+    public get emailInput(): ElementFinder {
+        return element(by.xpath("//input[@id='EMail']"));
     }
 }

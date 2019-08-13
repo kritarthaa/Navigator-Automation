@@ -190,15 +190,18 @@ describe('Customers Page', () => {
         await app.customers.removeButton.click();
     });
 
-    // fit('Verify the first pop up components of new customer', async () => {
+    // Customers -> Customers : Verify the first pop up components of new customer
+    it('Verify the first pop up components of new customer', async () => {
 
-    //     await app.customers.customerSidenav.click();
-    //     await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
-    //     await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customersLink)));
-    //     await app.customers.customersLink.click();
-    //     await (browser.wait(ExpectedConditions.visibilityOf(app.customers.newCustomerButton)));
-    //     await (browser.wait(ExpectedConditions.visibilityOf(app.customers.chooseUserTypes)));
-    //     browser.sleep(5000);
-
-    // });
+        await app.customers.customerSidenav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customersLink)));
+        await app.customers.customersLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.newCustomerButton)));
+        await app.customers.newCustomerButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.chooseUserTypes)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.firstName)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.lastNameForNewCustomer)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.continueButton)));
+    });
 });
