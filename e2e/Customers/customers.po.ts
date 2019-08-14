@@ -37,7 +37,7 @@ export class CustomersPage {
         return element(by.xpath('//*[@id="dt_Customers"]'));
     }
     public get deleteIcon(): ElementFinder {
-        return element(by.xpath('//*[@id="1859"]/td[6]/a'));
+        return element(by.xpath("//tr[@id='13616']//a[@class='btn btn-danger btn-md btn-remove']"));
     }
     public get popupTitleForDelete(): ElementFinder {
         return element(by.xpath('//*[@id="exampleModalLabel"]'));

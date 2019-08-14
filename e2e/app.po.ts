@@ -13,6 +13,7 @@ import { ReportsPage } from './Reports/reports.po';
 import { SalesPage } from './Sales/sales.po';
 import { SettingsPage } from './Settings/settings.po';
 import { VendorsPage } from './Vendors/vendors.po';
+import { CustomerGroupPage } from './Customers/customergroup.po';
 
 
 export interface AutomationUser {
@@ -40,6 +41,7 @@ export class AppPage {
   public settings = new SettingsPage();
   public vendors = new VendorsPage();
   public topnav = new TopNavPage();
+  public customergroup = new CustomerGroupPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);

@@ -27,6 +27,7 @@ describe('Customers Page', () => {
     });
 
     // Customers -> Customers: Verify UI of customers page
+
     it('Verify UI of customers page', async () => {
 
         await app.customers.customerSidenav.click();
@@ -40,8 +41,11 @@ describe('Customers Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.newCustomerButton)));
 
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.seachBar)));
+
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.tableList)));
+
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.deleteIcon)));
+
     });
 
     // Customers -> Customers: Verify the Export data
@@ -262,7 +266,7 @@ describe('Customers Page', () => {
 
     // Customers -> Customers : Verify the fourth pop up components of new customer
 
-    fit('Verify the fourth pop up components of new customer', async () => {
+    it('Verify the fourth pop up components of new customer', async () => {
 
         await app.customers.customerSidenav.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
