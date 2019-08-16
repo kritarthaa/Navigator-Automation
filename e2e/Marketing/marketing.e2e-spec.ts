@@ -1,7 +1,8 @@
 import { AppPage } from '../app.po';
 import { browser, ExpectedConditions } from 'protractor';
+import { async } from '@angular/core/testing';
 
-describe('Marketing Page', () => {
+fdescribe('Marketing Page', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
@@ -16,6 +17,59 @@ describe('Marketing Page', () => {
         await app.notification.closeBtn().click();
 
     });
+   // Marketing -> Discounts : Verify the UI of Discounts page
 
+    it('Verify the UI of Discounts page', async () => {
 
+    await app.marketing.marketingSideNav.click();
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+    await app.marketing.discountsLink.click();
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.generalDiscountTab)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createNewVolumeDiscountButton)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createANewDiscountButton)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.activeLink)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.inactiveLink)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchBar)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.tableHeadForGeneralDiscount)));
+
+});
+
+// Marketing -> Discounts: Verify search bar works for respective discount code
+
+    it('Verify search bar works for respective discount code', async () => {
+
+    await app.marketing.marketingSideNav.click();
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+    await app.marketing.discountsLink.click();
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchBar)));
+    await app.marketing.searchBar.sendKeys('Test20');
+    await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchBar)));
+});
+
+    // Marketing -> Discounts: Verify clicking on InActive leads to inactive list
+    it('Verify clicking on InActive leads to inactive list', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.inactiveLink)));
+        await app.marketing.inactiveLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.tableHeadForInactive)));
+
+    });
+
+    // Marketing -> Discounts: Verify the UI of Volume Discount
+    it('Verify the UI of Volume Discount', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.volumeDiscountTab)));
+        await app.marketing.volumeDiscountTab.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.tableHeadForVolumeDiscount)));
+    });
 });
