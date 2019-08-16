@@ -22,8 +22,11 @@ describe('On Top nav bar', () => {
     it('Verify queue pop up open and close', async () => {
 
     await app.topnav.queueLink.click();
-    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.wholePopup));
+
+    await browser.wait(ExpectedConditions.visibilityOf(app.topnav.CustomerListwholePopup));
+
     await browser.wait(ExpectedConditions.visibilityOf(app.topnav.closeIcon));
+
     await app.topnav.closeIcon.click();
   });
 
@@ -105,7 +108,7 @@ describe('On Top nav bar', () => {
     });
 
     // Top-nav -> Search bar: Verify clicking on item after searching will leads to respective page
-    fit('Verify clicking on item after searching will leads to respective page', async () => {
+    it('Verify clicking on item after searching will leads to respective page', async () => {
 
       await app.topnav.searchBar.sendKeys('POS');
       await browser.wait(ExpectedConditions.visibilityOf(app.topnav.searchPOS));
