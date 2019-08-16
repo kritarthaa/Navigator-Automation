@@ -56,5 +56,8 @@ export class CustomerGroupPage {
     public get cancelButtonForDelete(): ElementFinder {
         return element(by.xpath('/html/body/div[12]/div/div/div[2]/button[1]'));
     }
+    public get okButton(): ElementFinder {
+        return element(by.xpath('/html/body/div[12]/div/div/div[2]/button[2]'));
+    }
 
 }

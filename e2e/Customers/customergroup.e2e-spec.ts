@@ -165,4 +165,23 @@ describe('Customers Page', () => {
 
     });
 
+    // Customers -> Customer Groups: Verify clicking OK button delete the customer group
+
+    it('Verify clicking OK button delete the customer group', async () => {
+
+        await app.customers.customerSidenav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customers.customerDropdown)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.customerGroupLink)));
+        await app.customergroup.customerGroupLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.customerGroupTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.defineNewCustomerGroupButton)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.tableHead)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.deleteIcon)));
+        await app.customergroup.deleteIcon.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.okButton)));
+        await app.customergroup.okButton.click();
+        browser.sleep(5000);
+
+    });
+
 });
