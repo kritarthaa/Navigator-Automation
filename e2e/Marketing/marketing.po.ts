@@ -51,4 +51,19 @@ export class MarketingPage {
         return element(by.xpath("//div[@id='volume_active']//thead//tr"));
     }
 
+    public get inActiveLinkForVolumeDiscount(): ElementFinder {
+        return element(by.xpath('//*[@id="volume_discount"]/div[1]/div[1]/ul/li[2]/a'));
+    }
+    public get inActiveListForVolumeDiscount(): ElementFinder {
+        return element(by.xpath("//tr[@id='494']"));
+    }
+
+    // create new volume discount
+
+    public get createDiscountByVolumeTitle(): ElementFinder {
+        return element(by.xpath("//h5[@class='element-header']"));
+    }
+    public get codeInputForDiscount(): ElementFinder {
+        return element(by.xpath("//div[@class='col-md-2']//input[@id='DiscountToCreate_Name']"));
+    }
 }

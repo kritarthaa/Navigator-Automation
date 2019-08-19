@@ -2,7 +2,7 @@ import { AppPage } from '../app.po';
 import { browser, ExpectedConditions } from 'protractor';
 import { async } from '@angular/core/testing';
 
-fdescribe('Marketing Page', () => {
+describe('Marketing Page', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
@@ -71,5 +71,33 @@ fdescribe('Marketing Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.volumeDiscountTab)));
         await app.marketing.volumeDiscountTab.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.tableHeadForVolumeDiscount)));
+    });
+
+    // Marketing -> Discounts: Verify clicking on InActive leads to inactive list for Volume Discount
+    it('Verify clicking on InActive leads to inactive list for Volume Discount', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.volumeDiscountTab)));
+        await app.marketing.volumeDiscountTab.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.inActiveLinkForVolumeDiscount)));
+        await app.marketing.inActiveLinkForVolumeDiscount.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.inActiveListForVolumeDiscount)));
+    });
+
+    // Marketing -> Discounts: Verify clicking on Create new volume discount leads to create discount by volume page
+
+    it('Verify clicking on Create new volume discount leads to create discount by volume page', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createNewVolumeDiscountButton)));
+        await app.marketing.createNewVolumeDiscountButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createDiscountByVolumeTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.codeInputForDiscount)));
     });
 });
