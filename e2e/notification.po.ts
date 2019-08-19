@@ -36,7 +36,7 @@ export class Notification {
   public get deletePopup(): ElementFinder {
     return element(by.xpath('/html/body/div[12]/div/div'));
   }
-
+  
   // Actions
 
   public async waitForNotificationExistence(): Promise<void> {
