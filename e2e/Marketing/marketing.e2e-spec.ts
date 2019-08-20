@@ -48,8 +48,8 @@ describe('Marketing Page', () => {
     await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchBar)));
 });
 
-    // Marketing -> Discounts: Verify clicking on InActive leads to inactive list
-    it('Verify clicking on InActive leads to inactive list', async () => {
+    // Marketing -> Discounts: Verify clicking on InActive leads to inactive list for General discount
+    it('Verify clicking on InActive leads to inactive list for General discount', async () => {
 
         await app.marketing.marketingSideNav.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
@@ -99,5 +99,104 @@ describe('Marketing Page', () => {
         await app.marketing.createNewVolumeDiscountButton.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createDiscountByVolumeTitle)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.codeInputForDiscount)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.dicountNameInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.dicountFactorInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountFactorCondition)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.startDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.selectProducts)));
+    });
+
+    // Marketing -> Discounts: Verify clicking on Create a new discount leads to create discount page
+    it('Verify clicking on Create a new discount leads to create discount page', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createANewDiscountButton)));
+        await app.marketing.createANewDiscountButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.codeInputForDiscount)));
+        await app.marketing.codeInputForDiscount.sendKeys('test');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.dicountNameInput)));
+        await app.marketing.dicountNameInput.sendKeys('test');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountValueInput)));
+        await app.marketing.discountValueInput.sendKeys('1');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.startDateInput)));
+        await app.marketing.startDateInput.sendKeys('08/20/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.endDateInput)));
+        await app.marketing.endDateInput.sendKeys('08/20/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountType)));
+        await app.marketing.discountType.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.selectProducts)));
+        await app.marketing.selectProducts.click();
+
+    });
+
+    // Marketing -> Discounts: Verify new discount can be created from create a new discount page
+    it('Verify new discount can be created from create a new discount page', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createANewDiscountButton)));
+        await app.marketing.createANewDiscountButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.codeInputForDiscount)));
+        await app.marketing.codeInputForDiscount.sendKeys('test2');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.dicountNameInput)));
+        await app.marketing.dicountNameInput.sendKeys('test2');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountValueInput)));
+        await app.marketing.discountValueInput.sendKeys('1');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.startDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountType)));
+        await app.marketing.discountType.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.selectProducts)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchbarforNewDiscount)));
+        await app.marketing.searchbarforNewDiscount.sendKeys('weed');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.checkboxForSearchBar)));
+        await app.marketing.checkboxForSearchBar.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createDiscountButton)));
+        await app.marketing.createDiscountButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchBar)));
+        await app.marketing.searchBar.sendKeys('test2');
+
+    });
+
+    //  Marketing: Discount: Verify pop up open when click view button for specific row
+    it('Verify pop up open when click view button for specific row', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.ViewButton)));
+        await app.marketing.ViewButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.viewPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.editButton)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.deleteButton)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.closeButton)));
+
+    });
+
+    // Marketing -> Discounts: Verify View pop can be close using close icon and close button
+    it('Verify View pop can be close using close icon and close button', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.ViewButton)));
+        await app.marketing.ViewButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.viewPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.closeIconForView)));
+        await app.marketing.closeIconForView.click();
+        browser.sleep(5000);
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.ViewButton)));
+        await app.marketing.ViewButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.viewPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.closeButton)));
+        await app.marketing.closeButton.click();
     });
 });

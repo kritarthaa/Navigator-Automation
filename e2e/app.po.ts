@@ -15,6 +15,7 @@ import { SettingsPage } from './Settings/settings.po';
 import { VendorsPage } from './Vendors/vendors.po';
 import { CustomerGroupPage } from './Customers/customergroup.po';
 import { WaitingListPage } from './Customers/waitinglist.po';
+import { LoyaltyPage } from './Marketing/loyalty.po';
 
 
 export interface AutomationUser {
@@ -44,6 +45,7 @@ export class AppPage {
   public topnav = new TopNavPage();
   public customergroup = new CustomerGroupPage();
   public waitinglist = new WaitingListPage();
+  public loyalty = new LoyaltyPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);

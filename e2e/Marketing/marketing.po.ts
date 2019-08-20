@@ -66,4 +66,66 @@ export class MarketingPage {
     public get codeInputForDiscount(): ElementFinder {
         return element(by.xpath("//div[@class='col-md-2']//input[@id='DiscountToCreate_Name']"));
     }
+    public get dicountNameInput(): ElementFinder {
+        return element(by.xpath("//input[@id='DiscountToCreate_DiscountDescription']"));
+    }
+    public get dicountFactorInput(): ElementFinder {
+        return element(by.xpath("//input[@id='DiscountToCreate_FactorQuantity']"));
+    }
+    public get discountFactorCondition(): ElementFinder {
+        return element(by.xpath("//input[@id='DiscountToCreate_FactorCondition']"));
+    }
+    public get startDateInput(): ElementFinder {
+        return element(by.xpath("//input[@id='DiscountToCreate_StartDate']"));
+    }
+    public get endDateInput(): ElementFinder {
+        return element(by.xpath("//input[@id='DiscountToCreate_EndDate']"));
+    }
+    public get selectProducts(): ElementFinder {
+        return element(by.xpath("//a[@class='btn btn-block btn-secondary']"));
+    }
+
+ // UI for create a new discount
+
+    public get discountValueInput(): ElementFinder {
+        return element(by.xpath("//input[@id='DiscountToCreate_Value']"));
+    }
+    public get discountAppliedValue(): ElementFinder {
+        return element(by.xpath('//*[@id="DiscountToCreate_DiscountValueType_chosen"]/a'));
+    }
+    public get discountType(): ElementFinder {
+        return element(by.xpath('//*[@id="typeOfDiscount_chosen"]/a'));
+    }
+
+    // create new discount
+    public get searchbarforNewDiscount(): ElementFinder {
+        return element(by.xpath("//input[@placeholder='Search / Scan']"));
+    }
+    public get checkboxForSearchBar(): ElementFinder {
+        return element(by.xpath("//input[@class='checkbox_products']"));
+    }
+    public get createDiscountButton(): ElementFinder {
+        return element(by.xpath('//*[@id="btnCreateDiscount"]'));
+    }
+
+    // pop for view
+
+    public get ViewButton(): ElementFinder {
+        return element(by.xpath("//tr[@id='356']//div[@class='btn-group']//a[@id='orderOverview']"));
+    }
+    public get viewPopUpTitle(): ElementFinder {
+        return element(by.xpath('//*[@id="DetailsModal_356"]/div/div/div[1]/h6'));
+    }
+    public get editButton(): ElementFinder {
+        return element(by.xpath('//*[@id="DetailsModal_356"]/div/div/div[2]/div[1]/a[2]'));
+    }
+    public get deleteButton(): ElementFinder {
+        return element(by.xpath('//*[@id="DetailsModal_356"]/div/div/div[2]/div[1]/a[3]'));
+    }
+    public get closeButton(): ElementFinder {
+        return element(by.xpath('//*[@id="DetailsModal_356"]/div/div/div[3]/button'));
+    }
+    public get closeIconForView(): ElementFinder {
+        return element(by.xpath("//div[@class='modal-dialog modal-lg']//button[@class='close']"))
+    }
 }
