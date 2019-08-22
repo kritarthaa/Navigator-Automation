@@ -128,4 +128,27 @@ export class MarketingPage {
     public get closeIconForView(): ElementFinder {
         return element(by.xpath("//div[@class='modal-dialog modal-lg']//button[@class='close']"))
     }
+
+    // UI for create discount by volume
+    public get discountTypeForVolumeDiscount(): ElementFinder {
+        return element(by.xpath("//select[@id='typeOfDiscount']"));
+    }
+
+    // Edit discount
+    public get editDiscountTitle(): ElementFinder {
+        return element(by.xpath("//h5[@class='element-header']"));
+    }
+
+    // Delete button
+    public get confirmDelete(): ElementFinder {
+        return element(by.xpath('//*[@id="modal_Delete_Warning"]/div/div/div[2]/div/div/div[2]/button'));
+    }
+
+    // Pagination
+    public get paginatorForDiscount(): ElementFinder {
+        return element(by.xpath('//*[@id="dt_ActiveDiscounts_next"]/a'));
+    }
+    public get previousPaginatorForDiscount(): ElementFinder {
+        return element(by.xpath('//*[@id="dt_ActiveDiscounts_previous"]'));
+    }
 }

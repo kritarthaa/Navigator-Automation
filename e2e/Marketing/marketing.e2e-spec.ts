@@ -199,4 +199,81 @@ describe('Marketing Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.closeButton)));
         await app.marketing.closeButton.click();
     });
+
+
+    // Marketing -> Discounts: Verify new volume discount can be created from create a new volume discount page
+    it('Verify new volume discount can be created from create a new volume discount page', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createNewVolumeDiscountButton)));
+        await app.marketing.createNewVolumeDiscountButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.codeInputForDiscount)));
+        await app.marketing.codeInputForDiscount.sendKeys('seva1');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.dicountNameInput)));
+        await app.marketing.dicountNameInput.sendKeys('seva1');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.dicountFactorInput)));
+        await app.marketing.dicountFactorInput.sendKeys('2');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountFactorCondition)));
+        await app.marketing.discountFactorCondition.sendKeys('1');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.startDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTypeForVolumeDiscount)));
+        await app.marketing.discountTypeForVolumeDiscount.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.selectProducts)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.searchbarforNewDiscount)));
+        await app.marketing.searchbarforNewDiscount.sendKeys('weed');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.checkboxForSearchBar)));
+        await app.marketing.checkboxForSearchBar.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.createDiscountButton)));
+        await app.marketing.createDiscountButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.volumeDiscountTab)));
+
+    });
+    // Marketing -> Discounts: Verify click on edit for pop up view of general discount leads to Edit discount page
+    it('Verify click on edit for pop up view of general discount leads to Edit discount page', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.ViewButton)));
+        await app.marketing.ViewButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.viewPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.editButton)));
+        await app.marketing.editButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.editDiscountTitle)));
+    });
+
+    // Marketing -> Discounts: Verify click on delete for pop up view of general discount deletes the discount
+
+    it('Verify click on delete for pop up view of general discount deletes the discount', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.ViewButton)));
+        await app.marketing.ViewButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.viewPopUpTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.deleteButton)));
+        await app.marketing.deleteButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.confirmDelete)));
+        await app.marketing.confirmDelete.click();
+    });
+
+    // Marketing -> Discounts: Verify paginater works for discount page
+    fit('Verify paginater works for discount page', async () => {
+
+        await app.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
+        await app.marketing.discountsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.paginatorForDiscount)));
+        await app.marketing.paginatorForDiscount.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.previousPaginatorForDiscount)));
+
+    });
 });
