@@ -64,7 +64,6 @@ describe('Marketing Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.loyaltyTitle)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.toggleForMaximumPointsDiscount)));
         await app.loyalty.toggleForMaximumPointsDiscount.click();
-        browser.sleep(5000);
 
     });
 
