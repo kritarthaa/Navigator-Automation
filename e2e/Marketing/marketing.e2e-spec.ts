@@ -265,7 +265,7 @@ describe('Marketing Page', () => {
     });
 
     // Marketing -> Discounts: Verify paginater works for discount page
-    fit('Verify paginater works for discount page', async () => {
+    it('Verify paginater works for discount page', async () => {
 
         await app.marketing.marketingSideNav.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.marketing.discountsLink)));
