@@ -36,5 +36,54 @@ export class UserPage {
     public get showTwentyFiveOption(): ElementFinder {
         return element(by.xpath("//option[contains(text(),'25')]"));
     }
+
+    public get newUserButton(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div[1]/div[1]/div/button'));
+    }
+
+    // new user pop up
+    public get firstNameInput(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[1]/div/div/div[1]/div[1]/div[1]/div/input'));
+    }
+    public get lastNameInput(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[1]/div/div/div[1]/div[1]/div[2]/div/input'));
+    }
+    public get continueButton(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[1]/div/div/div[2]/button'));
+    }
+    public get phoneNumberInput(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[2]/div/input'));
+    }
+    public get streetAdressInput(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[5]/div/input'));
+    }
+    public get cityInput(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[7]/div/input'));
+    }
+    public get zipInput(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[2]/div/div[2]/div[9]/div/input'));
+    }
+    public get nextButton(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[2]/div/div[3]/button[2]'));
+    }
+    public get emailInput(): ElementFinder {
+        return element(by.xpath('//*[@id="EMail"]'));
+    }
+    public get newUserName(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[3]/div/div[2]/div[3]/div/input'));
+    }
+    public get newUserPassword(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[3]/div/div[3]/div[1]/div/input'));
+    }
+    public get confirmPassword(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[3]/div/div[3]/div[2]/div/input'));
+    }
+    public get submitButton(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/div[2]/div/div/div/div/div[3]/div/div[4]/button[2]'));
+    }
+    public get closeIcon(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div/a'));
+    }
 }
+
 
