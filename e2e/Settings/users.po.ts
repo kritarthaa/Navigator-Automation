@@ -84,6 +84,46 @@ export class UserPage {
     public get closeIcon(): ElementFinder {
         return element(by.xpath('//*[@id="add-user-form"]/div/a'));
     }
+
+    // Edit button
+    public get editButtonForUsers(): ElementFinder {
+        return element(by.xpath("//tr[@id='f6806ea1-7245-4153-bee7-6243e986ff42']//i[@class='icon-user']"));
+    }
+    public get userInfoTab(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div[2]/div/div[2]/div[1]/ul/li[1]/a'));
+    }
+    public get firstNameInputForPopup(): ElementFinder {
+        return element(by.xpath('//*[@id="tab_userinfo"]/div/div/table/tbody/tr[1]/td[2]/input'));
+    }
+    public get AccountSettingsTab(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div[2]/div/div[2]/div[1]/ul/li[2]/a'));
+    }
+    public get dispalyNameInputForPopup(): ElementFinder {
+        return element(by.xpath('//*[@id="displayname"]'));
+    }
+    public get saveAndChangesButton(): ElementFinder {
+        return element(by.xpath('//*[@id="add-user-form"]/div[3]/button[2]'));
+    }
+    public get closeButtonForPopup(): ElementFinder {
+        return element(by.xpath("//button[@class='btn btn-white']"));
+    }
+    // delete
+    public get deleteIconForUser(): ElementFinder {
+        return element(by.xpath("//tr[@id='e1182c2f-77df-4697-bedf-aa6df8a5946d']//a[@class='btn btn-danger btn-md btn-remove']"));
+    }
+    public get removeButtonForUser(): ElementFinder {
+        return element(by.xpath('//*[@id="removeEntryModal"]/div/div/div[3]/button[2]'));
+    }
+    public get deleteTextForUser(): ElementFinder {
+        return element(by.xpath("//div[@class='modal-body text-center']"));
+    }
+    // pagination
+    public get nextPageButton(): ElementFinder {
+        return element(by.xpath("//a[contains(text(),'Next')]"));
+    }
+    public get previousPageButton(): ElementFinder {
+        return element(by.xpath("//li[@id='dt_Users_previous']"));
+    }
 }
 
 

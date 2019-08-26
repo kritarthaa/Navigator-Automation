@@ -132,4 +132,83 @@ describe('Settings Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.submitButton)));
         await app.userSetting.submitButton.click();
     });
+    // Settings -> Users: Verify pop up open with editable user information when clicked on Edit button
+    it('Verify pop up open with editable user information when clicked on Edit button', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userDropdown)));
+        await app.userSetting.userDropdown.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.usersPageTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.editButtonForUsers)));
+        await app.userSetting.editButtonForUsers.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userInfoTab)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.AccountSettingsTab)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.saveAndChangesButton)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.closeButtonForPopup)));
+    });
+
+    // Settings -> Users: Verify pop up open and close for edit button
+    it('Verify pop up open and close for edit button', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userDropdown)));
+        await app.userSetting.userDropdown.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.usersPageTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.editButtonForUsers)));
+        await app.userSetting.editButtonForUsers.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userInfoTab)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.AccountSettingsTab)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.saveAndChangesButton)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.closeButtonForPopup)));
+        await app.userSetting.closeButtonForPopup.click();
+    });
+
+    // Settings -> Users : Verify users information can be changed and save
+    it('Verify users information can be changed and save', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userDropdown)));
+        await app.userSetting.userDropdown.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.usersPageTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.editButtonForUsers)));
+        await app.userSetting.editButtonForUsers.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userInfoTab)));
+        await app.userSetting.userInfoTab.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.firstNameInputForPopup)));
+        await app.userSetting.firstNameInputForPopup.sendKeys('Ally1');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.AccountSettingsTab)));
+        await app.userSetting.AccountSettingsTab.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.dispalyNameInputForPopup)));
+        await app.userSetting.dispalyNameInputForPopup.sendKeys('Ally Fryeee');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.saveAndChangesButton)));
+        await app.userSetting.saveAndChangesButton.click();
+
+    });
+
+    // Settings -> Users: Verify users deleted from delete icon
+    it('Verify users deleted from delete icon', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userDropdown)));
+        await app.userSetting.userDropdown.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.usersPageTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.deleteIconForUser)));
+        await app.userSetting.deleteIconForUser.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.deleteTextForUser)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.removeButtonForUser)));
+        await app.userSetting.removeButtonForUser.click();
+});
+
+    // Settings -> Users: Verify pagination works for users page
+    it('Verify pagination works for users page', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.userDropdown)));
+        await app.userSetting.userDropdown.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.usersPageTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.nextPageButton)));
+        await app.userSetting.nextPageButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.userSetting.previousPageButton)));
+        await app.userSetting.previousPageButton.click();
+    });
 });
