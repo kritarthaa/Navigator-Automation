@@ -17,6 +17,7 @@ import { CustomerGroupPage } from './Customers/customergroup.po';
 import { WaitingListPage } from './Customers/waitinglist.po';
 import { LoyaltyPage } from './Marketing/loyalty.po';
 import { UserPage } from './Settings/users.po';
+import { TerminalConfigurationPage } from './Settings/terminalconf.po';
 
 export interface AutomationUser {
   email: string;
@@ -47,6 +48,7 @@ export class AppPage {
   public waitinglist = new WaitingListPage();
   public loyalty = new LoyaltyPage();
   public userSetting = new UserPage();
+  public terminalconf = new TerminalConfigurationPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
