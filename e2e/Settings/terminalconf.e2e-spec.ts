@@ -68,6 +68,5 @@ describe('Settings Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.terminalconf.backToDashboardLink)));
         await app.terminalconf.backToDashboardLink.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.dashboard.dashboardBtn())));
-        browser.sleep(5000);
     });
 });
