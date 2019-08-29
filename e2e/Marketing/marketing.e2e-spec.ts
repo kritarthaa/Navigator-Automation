@@ -16,4 +16,6 @@ describe('Marketing Page', () => {
         await app.notification.closeBtn().click();
 
     });
+
+
 });
