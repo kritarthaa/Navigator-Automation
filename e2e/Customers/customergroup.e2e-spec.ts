@@ -180,7 +180,6 @@ describe('Customers Page', () => {
         await app.customergroup.deleteIcon.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.customergroup.okButton)));
         await app.customergroup.okButton.click();
-        browser.sleep(5000);
 
     });
 
