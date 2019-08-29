@@ -30,7 +30,6 @@ describe('Customers Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.waitinglist.checkedInTab)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.waitinglist.checkedOutTab)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.waitinglist.tableHeadForCheckedIn)));
-        browser.sleep(5000);
     });
 
     // Customers -> Waiting List: Verify UI of check in a customer button
@@ -147,6 +146,5 @@ describe('Customers Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.waitinglist.checkedOutTab)));
         await app.waitinglist.checkedOutTab.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.waitinglist.checkedOutTableHead)));
-        browser.sleep(5000);
     });
 });
