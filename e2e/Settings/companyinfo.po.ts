@@ -51,4 +51,26 @@ export class CompanyInfoPage {
     public get locationIdInput(): ElementFinder {
         return element(by.xpath("//input[@id='Company_WAState_Location']"));
     }
+
+    // POS settings tab
+    public get managerDiscountToggle(): ElementFinder {
+        return element(by.xpath('//*[@id="tabs-possettings"]/div[1]/div[3]/div/div/div[4]/div[2]/div/label'));
+    }
+    public get alwaysPrintPatientLabelToggle(): ElementFinder {
+        return element(by.xpath('//*[@id="tabs-possettings"]/div[1]/div[4]/div/div/div[4]/div[2]/div/label'));
+    }
+    public get ageLimitForBoth(): ElementFinder {
+        return element(by.xpath("//input[@id='Company_AgeLimitBoth']"));
+    }
+    public get receiptHeaderPhraseTextArea(): ElementFinder {
+        return element(by.xpath("//textarea[@id='Company_ReceiptHeaderPhrase']"));
+    }
+    public get customCssTextArea(): ElementFinder {
+        return element(by.xpath("//textarea[@id='Company_CustomCSS']"));
+    }
+
+    // Quickbooks info tab
+    public get signinwithButton(): ElementFinder {
+        return element(by.xpath('//*[@id="signininfo"]/ipp:login/a'));
+    }
 }
