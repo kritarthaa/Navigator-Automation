@@ -20,6 +20,7 @@ import { UserPage } from './Settings/users.po';
 import { TerminalConfigurationPage } from './Settings/terminalconf.po';
 import { DisplayListPage } from './Settings/displaylist.po';
 import { CompanyInfoPage } from './Settings/companyinfo.po';
+import { SalesLimitPage } from './Settings/saleslimit.po';
 
 export interface AutomationUser {
   email: string;
@@ -53,6 +54,7 @@ export class AppPage {
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
   public companyInfo = new CompanyInfoPage();
+  public saleslimit = new SalesLimitPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
