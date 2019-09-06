@@ -19,7 +19,7 @@ export class SalesLimitPage {
         return element(by.xpath("//a[@class='col pl-0 pt-3 pb-3 ng-binding']"));
     }
     public get medicalTab(): ElementFinder {
-        return element(by.xpath('//*[@id="headingOne"]/div/a'));
+        return element(by.xpath("//a[@class='col pl-0 pt-3 pb-3 ng-binding collapsed']"));
     }
     public get inputForFirstProduct(): ElementFinder {
         return element(by.xpath('//*[@id="collapseOne0"]/div/div/div[1]/div/div[2]/div/div/input'));
