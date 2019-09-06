@@ -28,7 +28,7 @@ describe('Settings Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.printerSelect)));
     });
     // Settings -> printer settings : Verify printer settings can be saved
-    fit('Verify printer settings can be saved', async () => {
+    it('Verify printer settings can be saved', async () => {
 
         await app.userSetting.sideNavSettings.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.printerSettingLink)));
