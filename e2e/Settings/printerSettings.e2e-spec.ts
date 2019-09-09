@@ -41,4 +41,27 @@ describe('Settings Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.saveButton)));
         await app.printerSettings.saveButton.click();
     });
+    // Settings -> printer settings : Verify printnode username and password can not be edited
+    it('Verify printnode username and password can not be edited', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.printerSettingLink)));
+        await app.printerSettings.printerSettingLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.posPrinterSettingsTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.printNodeUsername)));
+        await app.printerSettings.printNodeUsername.sendKeys('test');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.printNodePAssword)));
+        await app.printerSettings.printNodePAssword.sendKeys('test');
+
+    });
+    // Settings -> printer setting : Verify default receipt printer can used to test print
+    it('Verify default receipt printer can used to test print', async () => {
+
+        await app.userSetting.sideNavSettings.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.printerSettingLink)));
+        await app.printerSettings.printerSettingLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.posPrinterSettingsTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.printerSettings.defaultReceiptPrinter)));
+        await app.printerSettings.defaultReceiptPrinter.click();
+    });
 });

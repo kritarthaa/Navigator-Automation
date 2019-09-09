@@ -23,6 +23,7 @@ import { CompanyInfoPage } from './Settings/companyinfo.po';
 import { SalesLimitPage } from './Settings/saleslimit.po';
 import { PatientLabelPage } from './Settings/patientlabel.po';
 import { PrinterSettingsPage } from './Settings/printerSettings.po';
+import { TaxesPage } from './Settings/taxes.po';
 
 export interface AutomationUser {
   email: string;
@@ -59,6 +60,7 @@ export class AppPage {
   public saleslimit = new SalesLimitPage();
   public patientlabel = new PatientLabelPage();
   public printerSettings = new PrinterSettingsPage();
+  public taxes = new TaxesPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
