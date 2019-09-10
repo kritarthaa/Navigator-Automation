@@ -29,7 +29,6 @@ describe('Reports Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.exportDataToCSV)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.tableHead)));
 
-        browser.sleep(5000);
    });
    // Reports -> Close out terminal : Verify date can be selected and it loads the respective reports
     it('Verify date can be selected and it loads the respective reports', async () => {
