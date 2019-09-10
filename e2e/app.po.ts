@@ -19,6 +19,7 @@ import { LoyaltyPage } from './Marketing/loyalty.po';
 import { UserPage } from './Settings/users.po';
 import { TerminalConfigurationPage } from './Settings/terminalconf.po';
 import { DisplayListPage } from './Settings/displaylist.po';
+import { CloseOutTerminalPage } from './Reports/closeoutTerminal.po';
 
 export interface AutomationUser {
   email: string;
@@ -51,6 +52,7 @@ export class AppPage {
   public userSetting = new UserPage();
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
+  public closeout = new CloseOutTerminalPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
