@@ -9,7 +9,6 @@ import { CatalogPage } from './Catalog/catalog.po';
 import { CustomersPage } from './Customers/customers.po';
 import { InventoryPage } from './Inventory/inventory.po';
 import { MarketingPage } from './Marketing/marketing.po';
-import { ReportsPage } from './Reports/reports.po';
 import { SalesPage } from './Sales/sales.po';
 import { SettingsPage } from './Settings/settings.po';
 import { VendorsPage } from './Vendors/vendors.po';
@@ -19,8 +18,8 @@ import { LoyaltyPage } from './Marketing/loyalty.po';
 import { UserPage } from './Settings/users.po';
 import { TerminalConfigurationPage } from './Settings/terminalconf.po';
 import { DisplayListPage } from './Settings/displaylist.po';
-import { CloseOutTerminalPage } from './Reports/closeoutTerminal.po';
-import { MetrcReportPage } from './Reports/metrcReport.po';
+import { ReportPage } from './Reports/reports.po';
+
 
 export interface AutomationUser {
   email: string;
@@ -42,7 +41,6 @@ export class AppPage {
   public customers = new CustomersPage();
   public inventory = new InventoryPage();
   public marketing = new MarketingPage();
-  public reports = new ReportsPage();
   public sales = new SalesPage();
   public settings = new SettingsPage();
   public vendors = new VendorsPage();
@@ -53,8 +51,8 @@ export class AppPage {
   public userSetting = new UserPage();
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
-  public closeout = new CloseOutTerminalPage();
-  public metrcReport = new MetrcReportPage();
+  public reports = new ReportPage();
+
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
@@ -64,6 +62,4 @@ export class AppPage {
     browser.wait(ExpectedConditions.visibilityOf(this.login.loginButton()), 10000);
     this.login.clickLoginBtn();
   }
-
-
 }
