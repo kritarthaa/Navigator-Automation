@@ -29,4 +29,10 @@ export class CloseOutTerminalPage {
     public get closeIcon(): ElementFinder {
         return element(by.xpath('//*[@id="section-to-print2"]/form/a'));
     }
+    public get locationSelect(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div/h5/span[2]/div/select'));
+    }
+    public get AllLocationSelect(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div/h5/span[2]/div/select/option[1]'));
+    }
 }

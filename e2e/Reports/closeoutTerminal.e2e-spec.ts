@@ -58,4 +58,37 @@ describe('Reports Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.exportDataToCSV)));
         await app.closeout.exportDataToCSV.click();
     });
+    // Reports -> close out terminal : Verify reports can be viewed base on location
+    it('Verify reports can be viewed base on location', async () => {
+
+        await app.closeout.ReportsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.closeOutTeminalLink)));
+        await app.closeout.closeOutTeminalLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.closeOutTeminalTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.dateInput)));
+        await app.closeout.dateInput.clear();
+        await app.closeout.dateInput.sendKeys('08/08/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.loadTerminalSalesDataButton)));
+        await app.closeout.loadTerminalSalesDataButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.locationSelect)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.AllLocationSelect)));
+        await app.closeout.AllLocationSelect.click();
+    });
+    // Reports -> close out terminal : Verify respective terminal report can be view when clicked view icon
+    it('Verify respective terminal report can be view when clicked view icon', async () => {
+
+        await app.closeout.ReportsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.closeOutTeminalLink)));
+        await app.closeout.closeOutTeminalLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.closeOutTeminalTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.dateInput)));
+        await app.closeout.dateInput.clear();
+        await app.closeout.dateInput.sendKeys('08/08/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.loadTerminalSalesDataButton)));
+        await app.closeout.loadTerminalSalesDataButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.viewIcon)));
+        await app.closeout.viewIcon.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.closeout.closeIcon)));
+        await app.closeout.closeIcon.click();
+    });
 });
