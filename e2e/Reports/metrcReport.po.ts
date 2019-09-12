@@ -18,7 +18,7 @@ export class MetrcReportPage {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[1]/div[2]/div/div[2]/input'));
     }
     public get exportReportButton(): ElementFinder {
-        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[1]/div[2]/div/div[3]/button'));
+        return element(by.xpath("//button[@class='btn btn-primary btn-block metrcexport']"));
     }
     public get searchBar(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[1]/div[3]/div[1]/div[1]/div/input'));
@@ -28,5 +28,8 @@ export class MetrcReportPage {
     }
     public get firstRowData(): ElementFinder {
         return element(by.xpath("//div[@class='element-wrapper']//tbody//tr[1]"));
+    }
+    public get fromFirstRowOfGeneratedReports(): ElementFinder {
+        return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[4]'));
     }
 }

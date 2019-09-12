@@ -47,4 +47,23 @@ describe('Reports Page', () => {
         await app.reports.metrcReport.runWithNewDate.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.firstRowData)));
     });
+    // Reports -> metrc report : Verify new reports can be generated from export report
+    fit('Verify new reports can be generated from export report', async () => {
+
+        await app.reports.closeout.ReportsLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.MetrcReportLink)));
+        await app.reports.metrcReport.MetrcReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.metrcReportTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.startDateInput)));
+        await app.reports.metrcReport.startDateInput.clear();
+        await app.reports.metrcReport.startDateInput.sendKeys('08/02/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.runWithNewDate)));
+        await app.reports.metrcReport.runWithNewDate.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.firstRowData)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.exportReportButton)));
+        await app.reports.metrcReport.exportReportButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.fromFirstRowOfGeneratedReports)));
+
+    });
 });
