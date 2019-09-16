@@ -21,6 +21,7 @@ import { DisplayListPage } from './Settings/displaylist.po';
 import { ReportPage } from './Reports/reports.po';
 
 
+
 export interface AutomationUser {
   email: string;
   username?: string;
@@ -52,6 +53,7 @@ export class AppPage {
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
   public reports = new ReportPage();
+
 
 
   public validLogin(usernameText, passwordText) {
