@@ -9,7 +9,6 @@ import { CatalogPage } from './Catalog/catalog.po';
 import { CustomersPage } from './Customers/customers.po';
 import { InventoryPage } from './Inventory/inventory.po';
 import { MarketingsPage } from './Marketing/marketingss.po';
-import { ReportsPage } from './Reports/reports.po';
 import { SalesPage } from './Sales/sales.po';
 import { SettingsPage } from './Settings/settings.po';
 import { VendorsPage } from './Vendors/vendors.po';
@@ -42,7 +41,7 @@ export class AppPage {
   public customers = new CustomersPage();
   public inventory = new InventoryPage();
   public market = new MarketingsPage();
-  public reports = new ReportsPage();
+  public reports = new ReportPage();
   public sales = new SalesPage();
   public settings = new SettingsPage();
   public vendors = new VendorsPage();
@@ -52,7 +51,7 @@ export class AppPage {
   public userSetting = new UserPage();
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
-  public reports = new ReportPage();
+
 
 
 
