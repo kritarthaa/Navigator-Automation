@@ -21,49 +21,49 @@ describe('Marketing Page', () => {
     // Marketing -> Loyalty: Verify the UI of loyalty page
     it('Verify the UI of loyalty page', async () => {
 
-        await app.marketing.marketingSideNav.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.LoyaltyLink)));
-        await app.loyalty.LoyaltyLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.loyaltyTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.pointConversionSettingsText)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.tableHeadForLoyalty)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.toggleOptionForEarnStatus)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.toggleForMaximumPointsDiscount)));
-        await app.loyalty.toggleForMaximumPointsDiscount.click();
+        await app.market.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.LoyaltyLink)));
+        await app.market.loyalty.LoyaltyLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.loyaltyTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.pointConversionSettingsText)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.tableHeadForLoyalty)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.toggleOptionForEarnStatus)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.toggleForMaximumPointsDiscount)));
+        await app.market.loyalty.toggleForMaximumPointsDiscount.click();
     });
 
     // Marketing -> Loyalty: Verify toggle options works for earn points conversion rate
     it('Verify toggle options works for earn points conversion rate', async () => {
 
-        await app.marketing.marketingSideNav.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.LoyaltyLink)));
-        await app.loyalty.LoyaltyLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.loyaltyTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.toggleOptionForEarnStatus)));
-        await app.loyalty.toggleOptionForEarnStatus.click();
+        await app.market.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.LoyaltyLink)));
+        await app.market.loyalty.LoyaltyLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.loyaltyTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.toggleOptionForEarnStatus)));
+        await app.market.loyalty.toggleOptionForEarnStatus.click();
 
     });
 
         // Marketing -> Loyalty: Verify toggle options works for redemption conversion rate
     it('Verify toggle options works for redemption conversion rate', async () => {
 
-        await app.marketing.marketingSideNav.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.LoyaltyLink)));
-        await app.loyalty.LoyaltyLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.loyaltyTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.toggleForRedemptionStatus)));
-        await app.loyalty.toggleForRedemptionStatus.click();
+        await app.market.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.LoyaltyLink)));
+        await app.market.loyalty.LoyaltyLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.loyaltyTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.toggleForRedemptionStatus)));
+        await app.market.loyalty.toggleForRedemptionStatus.click();
     });
 
          // Marketing -> Loyalty: Verify toggle options works for maximum points discount
     it('Verify toggle options works for maximum points discount', async () => {
 
-        await app.marketing.marketingSideNav.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.LoyaltyLink)));
-        await app.loyalty.LoyaltyLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.loyaltyTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.loyalty.toggleForMaximumPointsDiscount)));
-        await app.loyalty.toggleForMaximumPointsDiscount.click();
+        await app.market.marketing.marketingSideNav.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.LoyaltyLink)));
+        await app.market.loyalty.LoyaltyLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.loyaltyTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.market.loyalty.toggleForMaximumPointsDiscount)));
+        await app.market.loyalty.toggleForMaximumPointsDiscount.click();
 
     });
 
