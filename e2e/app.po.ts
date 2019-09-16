@@ -18,11 +18,9 @@ import { WaitingListPage } from './Customers/waitinglist.po';
 import { UserPage } from './Settings/users.po';
 import { TerminalConfigurationPage } from './Settings/terminalconf.po';
 import { DisplayListPage } from './Settings/displaylist.po';
-import { CompanyInfoPage } from './Settings/companyinfo.po';
-import { SalesLimitPage } from './Settings/saleslimit.po';
-import { PatientLabelPage } from './Settings/patientlabel.po';
-import { PrinterSettingsPage } from './Settings/printerSettings.po';
-import { TaxesPage } from './Settings/taxes.po';
+import { ReportPage } from './Reports/reports.po';
+
+
 
 export interface AutomationUser {
   email: string;
@@ -54,11 +52,9 @@ export class AppPage {
   public userSetting = new UserPage();
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
-  public companyInfo = new CompanyInfoPage();
-  public saleslimit = new SalesLimitPage();
-  public patientlabel = new PatientLabelPage();
-  public printerSettings = new PrinterSettingsPage();
-  public taxes = new TaxesPage();
+  public reports = new ReportPage();
+
+
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
@@ -68,6 +64,4 @@ export class AppPage {
     browser.wait(ExpectedConditions.visibilityOf(this.login.loginButton()), 10000);
     this.login.clickLoginBtn();
   }
-
-
 }
