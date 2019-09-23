@@ -1,6 +1,6 @@
 import { AppPage } from '../app.po';
 import { browser, ExpectedConditions } from 'protractor';
-import { async } from 'q';
+
 
 describe('Settings Page', () => {
     let app = new AppPage();

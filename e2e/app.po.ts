@@ -8,18 +8,22 @@ import { browser, ExpectedConditions } from 'protractor';
 import { CatalogPage } from './Catalog/catalog.po';
 import { CustomersPage } from './Customers/customers.po';
 import { InventoryPage } from './Inventory/inventory.po';
-import { MarketingsPage } from './Marketing/marketingss.po';
+import { MarketingPage } from './Marketing/marketing.po';
 import { SalesPage } from './Sales/sales.po';
 import { SettingsPage } from './Settings/settings.po';
 import { VendorsPage } from './Vendors/vendors.po';
 import { CustomerGroupPage } from './Customers/customergroup.po';
 import { WaitingListPage } from './Customers/waitinglist.po';
+import { LoyaltyPage } from './Marketing/loyalty.po';
 import { UserPage } from './Settings/users.po';
 import { TerminalConfigurationPage } from './Settings/terminalconf.po';
 import { DisplayListPage } from './Settings/displaylist.po';
+import { CompanyInfoPage } from './Settings/companyinfo.po';
+import { SalesLimitPage } from './Settings/saleslimit.po';
+import { PatientLabelPage } from './Settings/patientlabel.po';
+import { PrinterSettingsPage } from './Settings/printerSettings.po';
+import { TaxesPage } from './Settings/taxes.po';
 import { ReportPage } from './Reports/reports.po';
-
-
 
 export interface AutomationUser {
   email: string;
@@ -40,20 +44,23 @@ export class AppPage {
   public logout = new LogoutPage();
   public customers = new CustomersPage();
   public inventory = new InventoryPage();
-  public market = new MarketingsPage();
-  public reports = new ReportPage();
+  public marketing = new MarketingPage();
   public sales = new SalesPage();
   public settings = new SettingsPage();
   public vendors = new VendorsPage();
   public topnav = new TopNavPage();
   public customergroup = new CustomerGroupPage();
   public waitinglist = new WaitingListPage();
+  public loyalty = new LoyaltyPage();
   public userSetting = new UserPage();
   public terminalconf = new TerminalConfigurationPage();
   public displaylist = new DisplayListPage();
-
-
-
+  public companyInfo = new CompanyInfoPage();
+  public saleslimit = new SalesLimitPage();
+  public patientlabel = new PatientLabelPage();
+  public printerSettings = new PrinterSettingsPage();
+  public taxes = new TaxesPage();
+  public reports = new ReportPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
@@ -63,4 +70,6 @@ export class AppPage {
     browser.wait(ExpectedConditions.visibilityOf(this.login.loginButton()), 10000);
     this.login.clickLoginBtn();
   }
+
+
 }
