@@ -2,6 +2,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
   allScriptsTimeout: 11000,
@@ -32,6 +33,13 @@ exports.config = {
   onPrepare() {
     browser.waitForAngularEnabled(false)
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+    jasmine.getEnv().addReporter(new HtmlReporter({
+      baseDirectory: 'tmp/htmlReporter',
+      takeScreenShotsOnlyForFailedSpecs: true,
+      preserveDirectory: false,
+      jsonsSubfolder: 'jsons'
+
+    }).getJasmine2Reporter());
 
     // Run setup tests first
     require("./e2e/setup.e2e-spec")
