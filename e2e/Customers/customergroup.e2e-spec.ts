@@ -2,7 +2,7 @@ import { AppPage } from '../app.po';
 import { browser, ExpectedConditions } from 'protractor';
 import { async } from 'q';
 
-describe('Customers Page', () => {
+fdescribe('Customers Page', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
