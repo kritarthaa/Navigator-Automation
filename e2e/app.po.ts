@@ -44,7 +44,7 @@ export class AppPage {
   public logout = new LogoutPage();
   public customers = new CustomersPage();
   public inventory = new InventoryPage();
-  public marketing = new MarketingPage();
+  public market = new MarketingPage();
   public sales = new SalesPage();
   public settings = new SettingsPage();
   public vendors = new VendorsPage();

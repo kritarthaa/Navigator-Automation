@@ -48,7 +48,7 @@ describe('Reports Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.firstRowData)));
     });
     // Reports -> metrc report : Verify new reports can be generated from export report
-    fit('Verify new reports can be generated from export report', async () => {
+    it('Verify new reports can be generated from export report', async () => {
 
         await app.reports.closeout.ReportsLink.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.MetrcReportLink)));
