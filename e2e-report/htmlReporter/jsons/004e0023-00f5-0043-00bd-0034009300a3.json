@@ -1,0 +1,1 @@
+{"description":"Verify clicking on back to dashboard leads to dashboard page from quick info tab|Settings Page","passed":false,"pending":true,"os":"Linux","instanceId":11624,"browser":{"name":"chrome","version":"77.0.3865.120"},"message":"Pending","browserLogs":[],"screenShotFile":"004e0023-00f5-0043-00bd-0034009300a3.png","timestamp":1573023068276,"duration":0}
