@@ -1,0 +1,1 @@
+{"description":"Verify click on delete for pop up view of general discount deletes the discount|Marketing Page","passed":false,"pending":true,"os":"Linux","instanceId":10751,"browser":{"name":"chrome","version":"76.0.3809.100"},"message":"Pending","browserLogs":[],"screenShotFile":"0070008a-00ec-002c-00b7-0028008e0033.png","timestamp":1571225242236,"duration":0}

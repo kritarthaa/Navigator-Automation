@@ -1,0 +1,1 @@
+{"description":"Verify clicking on Orders icon leads to Sales-> orders page |On Top nav bar","passed":false,"pending":true,"os":"Linux","instanceId":10751,"browser":{"name":"chrome","version":"76.0.3809.100"},"message":"Pending","browserLogs":[],"screenShotFile":"005b00f9-0046-0050-00bf-00fd00ae00a4.png","timestamp":1571225243040,"duration":0}
