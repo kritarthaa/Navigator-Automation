@@ -1,0 +1,1 @@
+{"description":"Verify clicking on Create new volume discount leads to create discount by volume page|Marketing Page","passed":false,"pending":true,"os":"Linux","instanceId":10751,"browser":{"name":"chrome","version":"76.0.3809.100"},"message":"Pending","browserLogs":[],"screenShotFile":"000400d1-00e1-0068-0070-00b200ee00c4.png","timestamp":1571225242070,"duration":0}

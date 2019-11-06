@@ -1,0 +1,1 @@
+{"description":"Verify clicking on InActive leads to inactive list for General discount|Marketing Page","passed":false,"pending":true,"os":"Linux","instanceId":10751,"browser":{"name":"chrome","version":"76.0.3809.100"},"message":"Pending","browserLogs":[],"screenShotFile":"008a00f9-0025-00db-007c-00ff006c00bc.png","timestamp":1571225242006,"duration":0}
