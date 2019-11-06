@@ -1,0 +1,1 @@
+{"description":"Verify clicking on back to dashboard page leads to dashboard page|Settings Page","passed":false,"pending":true,"os":"Linux","instanceId":11624,"browser":{"name":"chrome","version":"77.0.3865.120"},"message":"Pending","browserLogs":[],"screenShotFile":"00ce009c-0056-00bc-00ff-0005007b00f0.png","timestamp":1573023068506,"duration":0}

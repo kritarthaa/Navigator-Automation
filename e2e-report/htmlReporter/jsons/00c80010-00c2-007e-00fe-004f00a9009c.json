@@ -1,0 +1,1 @@
+{"description":"Verify clicking on item after searching will leads to respective page|On Top nav bar","passed":false,"pending":true,"os":"Linux","instanceId":11624,"browser":{"name":"chrome","version":"77.0.3865.120"},"message":"Pending","browserLogs":[],"screenShotFile":"00c80010-00c2-007e-00fe-004f00a9009c.png","timestamp":1573023068777,"duration":0}
