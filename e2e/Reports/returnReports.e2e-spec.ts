@@ -17,53 +17,53 @@ describe('Reports Page', () => {
         await app.notification.closeBtn().click();
 
     });
-    // Reports -> metrc report : Verify the UI of metrc report
-    it('Verify the UI of metrc report', async () => {
+    // Reports -> return report : Verify the UI of return report
+    it('Verify the contents of UI of Returns Report', async () => {
 
         await app.reports.closeout.ReportsLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.MetrcReportLink)));
-        await app.reports.metrcReport.MetrcReportLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.metrcReportTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.startDateInput)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.endDateInput)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.runWithNewDate)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.exportReportButton)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.searchBar)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.showOption)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.ReturnReportLink);
+        await app.reports.returnReport.returnReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.startDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.runWithNewDate)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.exportReportButton)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.searchBar)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.showOption)));
 
     });
-    // Reports -> metrc report : Verify reports can be run with new date
-    it('Verify reports can be run with new date', async () => {
+    // Reports -> return report : Verify reports can be run with new date
+    it('Verify for the sales of return', async () => {
 
         await app.reports.closeout.ReportsLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.MetrcReportLink)));
-        await app.reports.metrcReport.MetrcReportLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.metrcReportTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.startDateInput)));
-        await app.reports.metrcReport.startDateInput.clear();
-        await app.reports.metrcReport.startDateInput.sendKeys('08/02/2019');
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.endDateInput)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.runWithNewDate)));
-        await app.reports.metrcReport.runWithNewDate.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.firstRowData)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportLink)));
+        await app.reports.returnReport.returnReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.startDateInput)));
+        await app.reports.returnReport.startDateInput.clear();
+        await app.reports.returnReport.startDateInput.sendKeys('08/02/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.runWithNewDate)));
+        await app.reports.returnReport.runWithNewDate.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.firstRowData)));
     });
-    // Reports -> metrc report : Verify new reports can be generated from export report
+    // Reports -> return report : Verify new reports can be generated from export report
     it('Verify new reports can be generated from export report', async () => {
 
         await app.reports.closeout.ReportsLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.MetrcReportLink)));
-        await app.reports.metrcReport.MetrcReportLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.metrcReportTitle)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.startDateInput)));
-        await app.reports.metrcReport.startDateInput.clear();
-        await app.reports.metrcReport.startDateInput.sendKeys('08/02/2019');
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.endDateInput)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.runWithNewDate)));
-        await app.reports.metrcReport.runWithNewDate.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.firstRowData)));
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.exportReportButton)));
-        await app.reports.metrcReport.exportReportButton.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.metrcReport.fromFirstRowOfGeneratedReports)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportLink)));
+        await app.reports.returnReport.returnReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportTitle)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.startDateInput)));
+        await app.reports.returnReport.startDateInput.clear();
+        await app.reports.returnReport.startDateInput.sendKeys('08/02/2019');
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.endDateInput)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.runWithNewDate)));
+        await app.reports.returnReport.runWithNewDate.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.firstRowData)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.exportReportButton)));
+        await app.reports.returnReport.exportReportButton.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.fromFirstRowOfGeneratedReports)));
 
     });
 });

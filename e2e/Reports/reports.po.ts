@@ -2,6 +2,7 @@ import { LoginPage } from '../Login/loginPage.po';
 import { CloseOutTerminalPage } from './closeoutTerminal.po';
 import { MetrcReportPage } from './metrcReport.po';
 import { browser, ExpectedConditions } from 'protractor';
+import { ReturnReportPage } from './returnReports.po';
 
 export interface AutomationUser {
   email: string;
@@ -17,6 +18,7 @@ export class ReportPage {
   public login = new LoginPage(); 
   public closeout = new CloseOutTerminalPage();
   public metrcReport = new MetrcReportPage();
+  public returnReport = new ReturnReportPage();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
