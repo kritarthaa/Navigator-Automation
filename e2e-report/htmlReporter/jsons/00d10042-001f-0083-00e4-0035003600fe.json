@@ -1,0 +1,1 @@
+{"description":"Verify user can enter customer group name and description in the define new customer group pop up|Customers Page","passed":true,"pending":false,"os":"Linux","instanceId":11323,"browser":{"name":"chrome","version":"78.0.3904.97"},"message":"Passed.","trace":"","browserLogs":[],"timestamp":1573445298140,"duration":49090}
