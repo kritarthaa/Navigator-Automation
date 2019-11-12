@@ -271,35 +271,83 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
 
     var results = [
     {
-        "description": "should send error when user does not exist|Login Page",
+        "description": "Verify the contents of UI of Returns Report|Reports Page",
         "passed": true,
         "pending": false,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "timestamp": 1571225229967,
-        "duration": 10429
+        "timestamp": 1573528234454,
+        "duration": 42266
+    },
+    {
+        "description": "Verify for the sales of return|Reports Page",
+        "passed": true,
+        "pending": false,
+        "os": "Linux",
+        "instanceId": 9995,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1573528276768,
+        "duration": 47879
+    },
+    {
+        "description": "Verify new reports can be generated from export report|Reports Page",
+        "passed": true,
+        "pending": false,
+        "os": "Linux",
+        "instanceId": 9995,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "timestamp": 1573528324671,
+        "duration": 44670
+    },
+    {
+        "description": "should send error when user does not exist|Login Page",
+        "passed": false,
+        "pending": true,
+        "os": "Linux",
+        "instanceId": 9995,
+        "browser": {
+            "name": "chrome",
+            "version": "78.0.3904.97"
+        },
+        "message": "Pending",
+        "browserLogs": [],
+        "screenShotFile": "00f50010-0041-0055-00fc-00b2006700c5.png",
+        "timestamp": 1573528369371,
+        "duration": 41
     },
     {
         "description": "should show error when password is invalid|Login Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00cd0042-00eb-0079-0021-003100370028.png",
-        "timestamp": 1571225240447,
+        "screenShotFile": "00a60069-0055-0049-0058-001a00fa0068.png",
+        "timestamp": 1573528369435,
         "duration": 0
     },
     {
@@ -307,15 +355,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "003f00f7-002b-0081-0073-00fb007b00c8.png",
-        "timestamp": 1571225240470,
+        "screenShotFile": "00cc00d6-0022-0032-00aa-008f00f70092.png",
+        "timestamp": 1573528369462,
         "duration": 0
     },
     {
@@ -323,15 +371,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d30007-0067-002e-0068-009200630007.png",
-        "timestamp": 1571225240500,
+        "screenShotFile": "00770029-001e-008d-00ab-008d003b0076.png",
+        "timestamp": 1573528369505,
         "duration": 0
     },
     {
@@ -339,31 +387,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00100035-00bb-003e-0016-0048006a00d7.png",
-        "timestamp": 1571225240540,
-        "duration": 0
+        "screenShotFile": "007e0096-0035-0038-00ed-0094007000bd.png",
+        "timestamp": 1573528369544,
+        "duration": 1
     },
     {
         "description": "Verify contents of Cannabis product details|Catalog Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c50052-00ee-00e2-00dd-00d2004f0078.png",
-        "timestamp": 1571225240576,
+        "screenShotFile": "00e8006e-00c3-00ca-0081-0068004d00e8.png",
+        "timestamp": 1573528369577,
         "duration": 0
     },
     {
@@ -371,15 +419,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "007500c3-0028-00fa-0058-00d30072007d.png",
-        "timestamp": 1571225240607,
+        "screenShotFile": "009d0047-00ac-004e-00c3-003300f000dd.png",
+        "timestamp": 1573528369611,
         "duration": 0
     },
     {
@@ -387,31 +435,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005200bc-008b-00b0-0069-004800a30092.png",
-        "timestamp": 1571225240635,
-        "duration": 0
+        "screenShotFile": "000e008d-00a4-00a8-00aa-009200f5004d.png",
+        "timestamp": 1573528369642,
+        "duration": 1
     },
     {
         "description": "Verify contents of All cannabis product add new product|Catalog Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a500fd-0071-0085-005f-008100c40095.png",
-        "timestamp": 1571225240657,
+        "screenShotFile": "004e0038-000f-00d2-0001-00f100300075.png",
+        "timestamp": 1573528369680,
         "duration": 0
     },
     {
@@ -419,15 +467,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000e00a0-0005-00d4-000b-0090002d00d3.png",
-        "timestamp": 1571225240688,
+        "screenShotFile": "00e000f3-006b-0015-0065-009b00a40075.png",
+        "timestamp": 1573528369707,
         "duration": 0
     },
     {
@@ -435,15 +483,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a800ea-0000-0035-00fa-00fa000400a1.png",
-        "timestamp": 1571225240718,
+        "screenShotFile": "00f00026-00a9-000d-009b-004f000d0058.png",
+        "timestamp": 1573528369735,
         "duration": 0
     },
     {
@@ -451,15 +499,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002100a8-006a-00ad-000d-00b9007f0020.png",
-        "timestamp": 1571225240740,
+        "screenShotFile": "009a00bf-000b-00b5-0079-002f0004006d.png",
+        "timestamp": 1573528369753,
         "duration": 0
     },
     {
@@ -467,15 +515,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00790075-00ee-008a-009b-003b00a00074.png",
-        "timestamp": 1571225240761,
+        "screenShotFile": "00dc00b8-0030-0043-0018-00ae00f30086.png",
+        "timestamp": 1573528369785,
         "duration": 0
     },
     {
@@ -483,15 +531,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002b00b3-0005-0037-002d-008f009300d0.png",
-        "timestamp": 1571225240784,
+        "screenShotFile": "003b00ca-005d-004e-00cf-0038006d00c7.png",
+        "timestamp": 1573528369815,
         "duration": 0
     },
     {
@@ -499,15 +547,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000700ec-00cd-007b-00f1-00e300fd00e8.png",
-        "timestamp": 1571225240807,
+        "screenShotFile": "000c0006-00b6-0035-00d7-003800490078.png",
+        "timestamp": 1573528369845,
         "duration": 0
     },
     {
@@ -515,15 +563,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a20050-00b6-00b9-00e0-00f500a10028.png",
-        "timestamp": 1571225240828,
+        "screenShotFile": "00b40007-00bf-0043-0085-00d800b30076.png",
+        "timestamp": 1573528369875,
         "duration": 0
     },
     {
@@ -531,31 +579,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00560024-0063-009a-0029-006b00d500c1.png",
-        "timestamp": 1571225240853,
-        "duration": 0
+        "screenShotFile": "000e00eb-006f-002b-0078-002e00e1004e.png",
+        "timestamp": 1573528369904,
+        "duration": 1
     },
     {
         "description": "Verify customer group name and description can be edited and submit|Customers Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004e00de-0008-00b4-00f1-009f00030093.png",
-        "timestamp": 1571225240877,
+        "screenShotFile": "003b00d0-008b-00a1-00c8-002800680017.png",
+        "timestamp": 1573528369937,
         "duration": 0
     },
     {
@@ -563,15 +611,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002000f9-0055-00dd-002c-00e6000b0049.png",
-        "timestamp": 1571225240904,
+        "screenShotFile": "002f0045-0000-0015-00b8-00b300480021.png",
+        "timestamp": 1573528369966,
         "duration": 0
     },
     {
@@ -579,15 +627,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00bb0094-0038-005e-0016-00d20079001a.png",
-        "timestamp": 1571225240931,
+        "screenShotFile": "00fc00f9-00bd-0075-0052-006100bc00a4.png",
+        "timestamp": 1573528369994,
         "duration": 0
     },
     {
@@ -595,15 +643,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00370079-00dc-00c0-0010-00f7009e0075.png",
-        "timestamp": 1571225240965,
+        "screenShotFile": "00ea007c-00a5-0096-0070-004000a500b0.png",
+        "timestamp": 1573528370023,
         "duration": 0
     },
     {
@@ -611,15 +659,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d000dd-00d0-001d-0098-00140033000d.png",
-        "timestamp": 1571225240993,
+        "screenShotFile": "00580013-0067-00cd-0090-00e6003a00aa.png",
+        "timestamp": 1573528370051,
         "duration": 0
     },
     {
@@ -627,15 +675,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00b0003f-008d-002f-00b2-00be003900e1.png",
-        "timestamp": 1571225241020,
+        "screenShotFile": "00b10098-0087-001b-0046-0091004300cf.png",
+        "timestamp": 1573528370079,
         "duration": 0
     },
     {
@@ -643,15 +691,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0054004a-0090-003d-00f3-00f4008000aa.png",
-        "timestamp": 1571225241046,
+        "screenShotFile": "00f4000f-00ca-00fa-00b1-008c00dc0007.png",
+        "timestamp": 1573528370109,
         "duration": 0
     },
     {
@@ -659,15 +707,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005c0057-0056-0044-0045-008b004e0080.png",
-        "timestamp": 1571225241073,
+        "screenShotFile": "00c30013-0036-00c8-004a-00cd00ef0043.png",
+        "timestamp": 1573528370142,
         "duration": 0
     },
     {
@@ -675,15 +723,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d5004d-00d5-0068-002b-0058005c00e5.png",
-        "timestamp": 1571225241090,
+        "screenShotFile": "00f6000d-0035-0055-001d-005c001e0039.png",
+        "timestamp": 1573528370179,
         "duration": 0
     },
     {
@@ -691,31 +739,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00fc00c6-00ba-0002-0057-00f2006f00f0.png",
-        "timestamp": 1571225241113,
-        "duration": 1
+        "screenShotFile": "0045002a-0071-006f-004d-00b20008008f.png",
+        "timestamp": 1573528370202,
+        "duration": 0
     },
     {
         "description": "Verify the search for customers|Customers Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00cb00ef-001e-002d-0039-000900b3009b.png",
-        "timestamp": 1571225241132,
+        "screenShotFile": "009b009a-0035-0012-00a4-00af009c009d.png",
+        "timestamp": 1573528370236,
         "duration": 0
     },
     {
@@ -723,15 +771,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00f300da-0050-0064-00d1-0027009e0088.png",
-        "timestamp": 1571225241152,
+        "screenShotFile": "00c2009f-0049-00bc-00d2-0025005f00f8.png",
+        "timestamp": 1573528370268,
         "duration": 0
     },
     {
@@ -739,15 +787,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00060070-00a7-00c1-00ca-0084006200b5.png",
-        "timestamp": 1571225241174,
+        "screenShotFile": "004000ec-00d4-00bd-00cd-0057005b00b1.png",
+        "timestamp": 1573528370298,
         "duration": 0
     },
     {
@@ -755,15 +803,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "003b00ac-0099-0026-00ea-000d00a80083.png",
-        "timestamp": 1571225241195,
+        "screenShotFile": "002e0068-00ea-007a-005c-0076003300b0.png",
+        "timestamp": 1573528370323,
         "duration": 0
     },
     {
@@ -771,15 +819,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00890076-004f-0060-006b-0083004500af.png",
-        "timestamp": 1571225241206,
+        "screenShotFile": "00e2005f-006e-00f1-00f9-00f800a600ce.png",
+        "timestamp": 1573528370355,
         "duration": 0
     },
     {
@@ -787,15 +835,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00b800aa-00ea-00df-005c-006700a700d9.png",
-        "timestamp": 1571225241221,
+        "screenShotFile": "007f004a-0055-00fd-0067-0027004a00d0.png",
+        "timestamp": 1573528370373,
         "duration": 0
     },
     {
@@ -803,15 +851,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c00012-000d-00e0-0046-008300c700ea.png",
-        "timestamp": 1571225241254,
+        "screenShotFile": "00590020-008b-005f-0053-0044005b005d.png",
+        "timestamp": 1573528370398,
         "duration": 0
     },
     {
@@ -819,15 +867,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00bf00ed-006d-007c-0040-0054005300a9.png",
-        "timestamp": 1571225241280,
+        "screenShotFile": "00fe0074-004f-00b6-00f5-0067005500a9.png",
+        "timestamp": 1573528370431,
         "duration": 0
     },
     {
@@ -835,15 +883,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "008100cc-00e2-0044-0062-005100b30060.png",
-        "timestamp": 1571225241304,
+        "screenShotFile": "00050082-004b-000b-0007-00b0008e0020.png",
+        "timestamp": 1573528370464,
         "duration": 0
     },
     {
@@ -851,15 +899,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00fc0083-0090-0040-009c-00b8008d005f.png",
-        "timestamp": 1571225241338,
+        "screenShotFile": "00d5002b-000f-0080-00ad-00f10021007c.png",
+        "timestamp": 1573528370502,
         "duration": 0
     },
     {
@@ -867,15 +915,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c800a9-00de-00a9-00c2-00550006008d.png",
-        "timestamp": 1571225241366,
+        "screenShotFile": "00db00fe-0078-00ad-0066-008b009e00fb.png",
+        "timestamp": 1573528370538,
         "duration": 0
     },
     {
@@ -883,15 +931,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000900bb-0045-0092-009e-001c00bb00e6.png",
-        "timestamp": 1571225241392,
+        "screenShotFile": "009300bf-0027-005d-00a8-00a700460058.png",
+        "timestamp": 1573528370575,
         "duration": 0
     },
     {
@@ -899,15 +947,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00500098-00f8-0025-0013-00b600970045.png",
-        "timestamp": 1571225241415,
+        "screenShotFile": "006a0093-0063-00ac-0048-006b000e00ec.png",
+        "timestamp": 1573528370609,
         "duration": 0
     },
     {
@@ -915,15 +963,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00700020-0055-0015-00ea-002400a30067.png",
-        "timestamp": 1571225241438,
+        "screenShotFile": "0084001a-00fd-0058-0025-000600b900d7.png",
+        "timestamp": 1573528370640,
         "duration": 0
     },
     {
@@ -931,15 +979,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "009e0054-005b-00dc-00a4-009c00ce0066.png",
-        "timestamp": 1571225241467,
+        "screenShotFile": "00690007-008d-00e9-0090-005400650055.png",
+        "timestamp": 1573528370681,
         "duration": 0
     },
     {
@@ -947,15 +995,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d50057-0099-00ab-009a-003400a20070.png",
-        "timestamp": 1571225241489,
+        "screenShotFile": "005e00d0-0098-006d-000d-00a8002e0056.png",
+        "timestamp": 1573528370705,
         "duration": 0
     },
     {
@@ -963,15 +1011,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002b0031-00f0-009a-00ee-00be00a90055.png",
-        "timestamp": 1571225241512,
+        "screenShotFile": "00b600eb-00bf-0077-002d-00e3007200ac.png",
+        "timestamp": 1573528370736,
         "duration": 0
     },
     {
@@ -979,15 +1027,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "006600ff-003e-0033-0020-0012006a00aa.png",
-        "timestamp": 1571225241531,
+        "screenShotFile": "00d60084-0031-0070-00d4-005c00aa0069.png",
+        "timestamp": 1573528370766,
         "duration": 0
     },
     {
@@ -995,15 +1043,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "008b00f6-00bf-001f-008c-006f00f400bd.png",
-        "timestamp": 1571225241549,
+        "screenShotFile": "00350010-0047-00f0-0050-007e00910015.png",
+        "timestamp": 1573528370805,
         "duration": 0
     },
     {
@@ -1011,15 +1059,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0067008f-00a8-002b-00a7-00c600e500ab.png",
-        "timestamp": 1571225241567,
+        "screenShotFile": "0006003b-0072-00cc-002a-00d9004700e8.png",
+        "timestamp": 1573528370834,
         "duration": 0
     },
     {
@@ -1027,15 +1075,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c80001-009a-00b5-0058-00200085001e.png",
-        "timestamp": 1571225241593,
+        "screenShotFile": "00cc003c-0060-00c1-00f0-0001008b00b8.png",
+        "timestamp": 1573528370866,
         "duration": 0
     },
     {
@@ -1043,15 +1091,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "008a009e-0033-00f5-00d1-007300110062.png",
-        "timestamp": 1571225241607,
+        "screenShotFile": "00b900f3-00bc-0079-0049-004b00710038.png",
+        "timestamp": 1573528370899,
         "duration": 0
     },
     {
@@ -1059,15 +1107,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "006d00b7-00a3-0075-0067-006700910034.png",
-        "timestamp": 1571225241632,
+        "screenShotFile": "003b004f-001a-00a6-0028-00c4005400d0.png",
+        "timestamp": 1573528370923,
         "duration": 0
     },
     {
@@ -1075,15 +1123,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000e0005-0020-0030-00d0-004300d200b7.png",
-        "timestamp": 1571225241647,
+        "screenShotFile": "00410054-002a-0048-008d-008d00ef00c5.png",
+        "timestamp": 1573528370959,
         "duration": 0
     },
     {
@@ -1091,15 +1139,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004500de-00b4-009d-0097-003200fd0027.png",
-        "timestamp": 1571225241670,
+        "screenShotFile": "00380029-00a1-009b-0097-004e00430054.png",
+        "timestamp": 1573528370984,
         "duration": 0
     },
     {
@@ -1107,15 +1155,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004c00c1-00c3-009a-0015-00540075009f.png",
-        "timestamp": 1571225241693,
+        "screenShotFile": "0022008a-008b-002d-008d-001c0095009c.png",
+        "timestamp": 1573528371018,
         "duration": 0
     },
     {
@@ -1123,15 +1171,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a80094-00a0-0068-00c8-0051003f006c.png",
-        "timestamp": 1571225241715,
+        "screenShotFile": "00e50084-00d9-0063-00de-002e00840063.png",
+        "timestamp": 1573528371049,
         "duration": 0
     },
     {
@@ -1139,31 +1187,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d1002c-0040-00fa-00a4-00db00c80016.png",
-        "timestamp": 1571225241737,
-        "duration": 0
+        "screenShotFile": "007300a2-0060-008b-00ee-0002006d0060.png",
+        "timestamp": 1573528371079,
+        "duration": 1
     },
     {
         "description": "Verify delete inventory item|Inventory Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00730030-0062-003b-00ba-0074004f0040.png",
-        "timestamp": 1571225241760,
+        "screenShotFile": "0092007b-0027-00e8-007f-005500050032.png",
+        "timestamp": 1573528371115,
         "duration": 0
     },
     {
@@ -1171,15 +1219,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c800e0-00c6-00e8-00f7-00fb0006003c.png",
-        "timestamp": 1571225241775,
+        "screenShotFile": "00ca0033-000d-00cf-00cd-00e90073004a.png",
+        "timestamp": 1573528371145,
         "duration": 0
     },
     {
@@ -1187,15 +1235,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004100cb-0046-0081-0093-000a004c009d.png",
-        "timestamp": 1571225241796,
+        "screenShotFile": "004600c5-000c-00e6-003a-002f003c0013.png",
+        "timestamp": 1573528371169,
         "duration": 0
     },
     {
@@ -1203,15 +1251,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00740014-0017-009d-0020-00e800fe00ae.png",
-        "timestamp": 1571225241819,
+        "screenShotFile": "00fe0067-00bd-009d-004e-003d0084007c.png",
+        "timestamp": 1573528371201,
         "duration": 0
     },
     {
@@ -1219,47 +1267,47 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00af0033-00f7-0098-0005-00ba00bf000e.png",
-        "timestamp": 1571225241841,
-        "duration": 1
+        "screenShotFile": "00fd00d0-0076-006a-001e-0033006e001a.png",
+        "timestamp": 1573528371232,
+        "duration": 0
     },
     {
         "description": "should be able to login and should be logged out |Logout Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a00092-00c0-0092-0081-0093008e00c5.png",
-        "timestamp": 1571225241863,
-        "duration": 0
+        "screenShotFile": "00150058-005c-00a4-0073-00be007000c9.png",
+        "timestamp": 1573528371255,
+        "duration": 1
     },
     {
         "description": "Verify the UI of loyalty page|Marketing Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00130080-0088-000f-009d-006600d00053.png",
-        "timestamp": 1571225241880,
+        "screenShotFile": "003e0099-0010-0046-0039-00fc00b400e7.png",
+        "timestamp": 1573528371288,
         "duration": 0
     },
     {
@@ -1267,47 +1315,47 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00b90021-002b-0005-005b-006a007400e1.png",
-        "timestamp": 1571225241905,
-        "duration": 0
+        "screenShotFile": "0022001b-00e5-00e2-0088-008500e800ed.png",
+        "timestamp": 1573528371321,
+        "duration": 1
     },
     {
         "description": "Verify toggle options works for redemption conversion rate|Marketing Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "003f0061-000c-0016-0073-003600b700bf.png",
-        "timestamp": 1571225241928,
-        "duration": 0
+        "screenShotFile": "001d00cb-00d9-00c1-00a8-0051006b0052.png",
+        "timestamp": 1573528371356,
+        "duration": 1
     },
     {
         "description": "Verify toggle options works for maximum points discount|Marketing Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "006d008c-0030-0037-0098-006100b50057.png",
-        "timestamp": 1571225241943,
+        "screenShotFile": "0045006e-0052-003e-003f-008800f90081.png",
+        "timestamp": 1573528371395,
         "duration": 0
     },
     {
@@ -1315,15 +1363,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00ff00a6-001b-00d8-00df-003700330040.png",
-        "timestamp": 1571225241966,
+        "screenShotFile": "00b70007-006f-006e-00ce-008000cf007f.png",
+        "timestamp": 1573528371413,
         "duration": 0
     },
     {
@@ -1331,15 +1379,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0030009a-00b3-005c-00a6-00a200b20003.png",
-        "timestamp": 1571225241983,
+        "screenShotFile": "008900d1-0084-00d8-00db-00cf0017006c.png",
+        "timestamp": 1573528371447,
         "duration": 0
     },
     {
@@ -1347,15 +1395,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "008a00f9-0025-00db-007c-00ff006c00bc.png",
-        "timestamp": 1571225242006,
+        "screenShotFile": "00920042-00d0-00b8-000a-00fa00f10094.png",
+        "timestamp": 1573528371482,
         "duration": 0
     },
     {
@@ -1363,31 +1411,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c0000c-0025-00ad-00c8-00be002a00ee.png",
-        "timestamp": 1571225242032,
-        "duration": 1
+        "screenShotFile": "002b0014-001f-0035-00da-0005008f0042.png",
+        "timestamp": 1573528371524,
+        "duration": 0
     },
     {
         "description": "Verify clicking on InActive leads to inactive list for Volume Discount|Marketing Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0042003d-00e0-00cf-004c-00f4002f006d.png",
-        "timestamp": 1571225242056,
+        "screenShotFile": "005c0029-009a-0088-00cd-00e300fe0005.png",
+        "timestamp": 1573528371562,
         "duration": 0
     },
     {
@@ -1395,15 +1443,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000400d1-00e1-0068-0070-00b200ee00c4.png",
-        "timestamp": 1571225242070,
+        "screenShotFile": "0099000c-00c3-0039-004d-000c0002002e.png",
+        "timestamp": 1573528371597,
         "duration": 0
     },
     {
@@ -1411,15 +1459,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "007d0069-0049-00c2-0058-001900a20031.png",
-        "timestamp": 1571225242093,
+        "screenShotFile": "004700e4-0028-000d-0054-00d300fd003f.png",
+        "timestamp": 1573528371623,
         "duration": 0
     },
     {
@@ -1427,15 +1475,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00330056-00cb-00f3-00a2-00ac00620078.png",
-        "timestamp": 1571225242118,
+        "screenShotFile": "003c00e7-00be-00c3-0072-002a004400f8.png",
+        "timestamp": 1573528371663,
         "duration": 0
     },
     {
@@ -1443,15 +1491,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "009300aa-00f9-006f-0039-00fb00560085.png",
-        "timestamp": 1571225242146,
+        "screenShotFile": "00af00c8-0085-00e9-00fe-002600730098.png",
+        "timestamp": 1573528371714,
         "duration": 0
     },
     {
@@ -1459,15 +1507,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005f00bc-007b-00de-0064-00f20024005c.png",
-        "timestamp": 1571225242169,
+        "screenShotFile": "00ef0098-0055-0046-008c-007300070058.png",
+        "timestamp": 1573528371749,
         "duration": 0
     },
     {
@@ -1475,15 +1523,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00140008-009f-0087-0027-004e008600ce.png",
-        "timestamp": 1571225242192,
+        "screenShotFile": "00b80080-0080-00c2-0061-00d600610077.png",
+        "timestamp": 1573528371783,
         "duration": 0
     },
     {
@@ -1491,31 +1539,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a9006f-00bf-00d2-00a6-00d000910027.png",
-        "timestamp": 1571225242216,
-        "duration": 1
+        "screenShotFile": "00650086-00c6-003c-0081-00e800580043.png",
+        "timestamp": 1573528371818,
+        "duration": 0
     },
     {
         "description": "Verify click on delete for pop up view of general discount deletes the discount|Marketing Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0070008a-00ec-002c-00b7-0028008e0033.png",
-        "timestamp": 1571225242236,
+        "screenShotFile": "00d4004f-00a0-0044-00be-005700210013.png",
+        "timestamp": 1573528371848,
         "duration": 0
     },
     {
@@ -1523,31 +1571,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00210034-00fc-003c-007c-0096000b0027.png",
-        "timestamp": 1571225242261,
-        "duration": 0
+        "screenShotFile": "008800b5-00eb-002a-0025-0003004a00a4.png",
+        "timestamp": 1573528371882,
+        "duration": 1
     },
     {
         "description": "should able to click POS on sidenav|After Clicking POS",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00dd0001-0018-00bd-00a6-002c00640043.png",
-        "timestamp": 1571225242287,
+        "screenShotFile": "005e00f1-0018-00d8-0096-008000e7002e.png",
+        "timestamp": 1573528371922,
         "duration": 0
     },
     {
@@ -1555,15 +1603,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00eb0095-00f0-00e4-0074-00e5004400d0.png",
-        "timestamp": 1571225242311,
+        "screenShotFile": "005600dc-006f-0056-002d-00c4003c0032.png",
+        "timestamp": 1573528371956,
         "duration": 0
     },
     {
@@ -1571,31 +1619,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00120004-00f1-00d7-0009-00b900c700e1.png",
-        "timestamp": 1571225242333,
-        "duration": 1
+        "screenShotFile": "00c100bf-00cc-007e-0078-007100a800de.png",
+        "timestamp": 1573528371992,
+        "duration": 0
     },
     {
         "description": "Verify POS page top bar item is clickable and show its specific information|After Clicking POS",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "009e00f1-00c0-00bf-00e8-004a009f0074.png",
-        "timestamp": 1571225242360,
+        "screenShotFile": "00330098-00cb-0088-0046-002000bf00fe.png",
+        "timestamp": 1573528372036,
         "duration": 0
     },
     {
@@ -1603,15 +1651,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004600a5-005d-007f-003d-0021005a00b8.png",
-        "timestamp": 1571225242385,
+        "screenShotFile": "001a0074-007a-00d4-00a0-00d7000d0031.png",
+        "timestamp": 1573528372062,
         "duration": 0
     },
     {
@@ -1619,31 +1667,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000b0018-00c9-0007-0084-009f003a00e3.png",
-        "timestamp": 1571225242408,
-        "duration": 1
+        "screenShotFile": "005e0024-004c-001d-0091-00ff0083008b.png",
+        "timestamp": 1573528372098,
+        "duration": 0
     },
     {
         "description": "Verify discount pop up close|After Clicking POS",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002800b8-00ff-00a1-0014-00b500e400b4.png",
-        "timestamp": 1571225242432,
+        "screenShotFile": "005f0067-00a9-0024-00bd-0048008900c4.png",
+        "timestamp": 1573528372134,
         "duration": 0
     },
     {
@@ -1651,31 +1699,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a30024-00f1-0073-005c-001e00d000a5.png",
-        "timestamp": 1571225242466,
-        "duration": 0
+        "screenShotFile": "004300b9-00f0-0054-0078-0000000c00bd.png",
+        "timestamp": 1573528372209,
+        "duration": 1
     },
     {
         "description": "Verify date can be selected and it loads the respective reports|Reports Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "007d006d-0068-00ac-00dc-006a002500a7.png",
-        "timestamp": 1571225242493,
+        "screenShotFile": "001700bd-001a-006d-0012-00a9003900a1.png",
+        "timestamp": 1573528372244,
         "duration": 0
     },
     {
@@ -1683,15 +1731,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00840058-0030-0088-00c1-00d70090006b.png",
-        "timestamp": 1571225242512,
+        "screenShotFile": "000b00fd-0002-0086-0057-008a0071008d.png",
+        "timestamp": 1573528372277,
         "duration": 0
     },
     {
@@ -1699,15 +1747,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c900d2-00aa-00bd-001c-009300d00044.png",
-        "timestamp": 1571225242520,
+        "screenShotFile": "00190055-009d-0044-0045-006b00420018.png",
+        "timestamp": 1573528372288,
         "duration": 0
     },
     {
@@ -1715,15 +1763,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00960046-000c-004e-008a-005900d800fa.png",
-        "timestamp": 1571225242527,
+        "screenShotFile": "00c20081-0065-0015-00ff-00f6005a001f.png",
+        "timestamp": 1573528372299,
         "duration": 0
     },
     {
@@ -1731,15 +1779,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002e00c8-00de-00dd-00da-001b001400fd.png",
-        "timestamp": 1571225242533,
+        "screenShotFile": "00e200c7-0079-0032-00fc-0045002800de.png",
+        "timestamp": 1573528372312,
         "duration": 0
     },
     {
@@ -1747,15 +1795,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0021000f-0047-0001-0073-00ee0059003c.png",
-        "timestamp": 1571225242540,
+        "screenShotFile": "0027005f-0037-00d2-0069-001d00300089.png",
+        "timestamp": 1573528372321,
         "duration": 0
     },
     {
@@ -1763,15 +1811,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00e500c6-006d-00d0-0014-00d5001f0000.png",
-        "timestamp": 1571225242566,
+        "screenShotFile": "007000d0-009c-0040-00bc-0076001e006e.png",
+        "timestamp": 1573528372335,
         "duration": 0
     },
     {
@@ -1779,15 +1827,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00e0007e-00ad-000a-00ab-004700630015.png",
-        "timestamp": 1571225242575,
+        "screenShotFile": "0028009c-00f4-0045-006c-00e900e700aa.png",
+        "timestamp": 1573528372344,
         "duration": 0
     },
     {
@@ -1795,15 +1843,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0085008b-00b6-0096-00db-00f0005500fb.png",
-        "timestamp": 1571225242585,
+        "screenShotFile": "00ec0018-0084-0025-0002-005b008500ae.png",
+        "timestamp": 1573528372356,
         "duration": 0
     },
     {
@@ -1811,15 +1859,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004600dc-00d5-00c2-00be-00d900a90056.png",
-        "timestamp": 1571225242594,
+        "screenShotFile": "007b003b-009f-0059-0032-006d00840015.png",
+        "timestamp": 1573528372365,
         "duration": 0
     },
     {
@@ -1827,15 +1875,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004d00ef-002a-003e-00d5-00bc0012008e.png",
-        "timestamp": 1571225242603,
+        "screenShotFile": "00f90030-00fd-00ae-001b-00b900c90099.png",
+        "timestamp": 1573528372371,
         "duration": 0
     },
     {
@@ -1843,15 +1891,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00b70034-005b-001f-00b0-00b3003200d1.png",
-        "timestamp": 1571225242613,
+        "screenShotFile": "007800bf-005d-001a-0035-00fe003300f1.png",
+        "timestamp": 1573528372377,
         "duration": 0
     },
     {
@@ -1859,15 +1907,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00870065-0046-005e-00f6-002200080099.png",
-        "timestamp": 1571225242622,
+        "screenShotFile": "008f0063-0047-00c4-0090-000900e50051.png",
+        "timestamp": 1573528372387,
         "duration": 0
     },
     {
@@ -1875,31 +1923,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d00013-0006-00d0-0046-00a400e400cf.png",
-        "timestamp": 1571225242631,
-        "duration": 0
+        "screenShotFile": "00530087-0083-00e5-0042-0004000f000f.png",
+        "timestamp": 1573528372399,
+        "duration": 1
     },
     {
         "description": "Verify contents of Return page|Sales Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c600e0-0046-00a0-0080-000c00700026.png",
-        "timestamp": 1571225242640,
+        "screenShotFile": "00a900ce-009e-0066-0062-007200a4003b.png",
+        "timestamp": 1573528372409,
         "duration": 0
     },
     {
@@ -1907,15 +1955,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c7003c-00cb-001a-00e9-004b00ce0046.png",
-        "timestamp": 1571225242649,
+        "screenShotFile": "006d0038-0043-0067-00a6-002b003f00a8.png",
+        "timestamp": 1573528372415,
         "duration": 0
     },
     {
@@ -1923,15 +1971,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00710063-007d-0054-0065-00d200f90010.png",
-        "timestamp": 1571225242657,
+        "screenShotFile": "00bb006f-003f-0078-0094-005d003a00ba.png",
+        "timestamp": 1573528372424,
         "duration": 0
     },
     {
@@ -1939,15 +1987,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00bf0080-000e-005f-004f-008200870057.png",
-        "timestamp": 1571225242663,
+        "screenShotFile": "00ef0015-00de-0055-0083-008c007d00a3.png",
+        "timestamp": 1573528372432,
         "duration": 0
     },
     {
@@ -1955,15 +2003,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004b0073-00b6-00ba-009e-005d00cc00fe.png",
-        "timestamp": 1571225242670,
+        "screenShotFile": "00300002-008d-00bf-00f2-00fb00e50087.png",
+        "timestamp": 1573528372440,
         "duration": 0
     },
     {
@@ -1971,31 +2019,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00e600e1-002f-003b-0056-0090000d009b.png",
-        "timestamp": 1571225242678,
-        "duration": 0
+        "screenShotFile": "00f100c4-002f-0015-0089-008c00d900f0.png",
+        "timestamp": 1573528372448,
+        "duration": 1
     },
     {
         "description": "Verify clicking on back to dashboard leads to dashboard page|Settings Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00470086-005c-0017-000f-00150089005e.png",
-        "timestamp": 1571225242685,
+        "screenShotFile": "003200bb-00f9-00ee-0069-006c009c00ee.png",
+        "timestamp": 1573528372456,
         "duration": 0
     },
     {
@@ -2003,15 +2051,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00b60080-00e6-00e3-00ed-0078006e0048.png",
-        "timestamp": 1571225242692,
+        "screenShotFile": "00800075-00c2-002e-0018-00e100a50003.png",
+        "timestamp": 1573528372464,
         "duration": 0
     },
     {
@@ -2019,15 +2067,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d30053-00f9-00ff-00ac-0027006b0065.png",
-        "timestamp": 1571225242699,
+        "screenShotFile": "00d80020-0097-006e-00fc-00cd00d50069.png",
+        "timestamp": 1573528372470,
         "duration": 0
     },
     {
@@ -2035,15 +2083,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00f500c3-00e2-002a-0042-00bb008d00f5.png",
-        "timestamp": 1571225242706,
+        "screenShotFile": "009300cd-00c0-009d-00e2-0003006900b9.png",
+        "timestamp": 1573528372475,
         "duration": 0
     },
     {
@@ -2051,15 +2099,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00de00d7-0069-00ba-0008-005c00ae00c2.png",
-        "timestamp": 1571225242712,
+        "screenShotFile": "00740006-0010-005d-007a-004f00160073.png",
+        "timestamp": 1573528372481,
         "duration": 0
     },
     {
@@ -2067,15 +2115,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002300fa-00c7-0017-00ce-001c00f60089.png",
-        "timestamp": 1571225242720,
+        "screenShotFile": "0074007e-009f-0097-0056-004b00d10025.png",
+        "timestamp": 1573528372487,
         "duration": 0
     },
     {
@@ -2083,15 +2131,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0083002f-00e2-0015-0020-003a00ea00ad.png",
-        "timestamp": 1571225242727,
+        "screenShotFile": "000b00c3-001b-00c0-00fc-0096006f003c.png",
+        "timestamp": 1573528372494,
         "duration": 0
     },
     {
@@ -2099,15 +2147,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00e100c3-00d1-00cb-0015-001c005b00da.png",
-        "timestamp": 1571225242734,
+        "screenShotFile": "00600095-0068-006c-0060-0053004a005f.png",
+        "timestamp": 1573528372502,
         "duration": 0
     },
     {
@@ -2115,15 +2163,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00640015-0045-0018-0084-005700dc000b.png",
-        "timestamp": 1571225242740,
+        "screenShotFile": "00c50066-0059-0002-0095-00dc00f80091.png",
+        "timestamp": 1573528372510,
         "duration": 0
     },
     {
@@ -2131,15 +2179,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "007b00e2-0050-00f0-0080-002f00840093.png",
-        "timestamp": 1571225242747,
+        "screenShotFile": "00d40030-0057-0035-00f5-00ef008200c2.png",
+        "timestamp": 1573528372516,
         "duration": 0
     },
     {
@@ -2147,15 +2195,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "007500e4-001a-0077-0084-0043001200c7.png",
-        "timestamp": 1571225242754,
+        "screenShotFile": "00fd006c-0035-00bc-0010-0076007f00a1.png",
+        "timestamp": 1573528372523,
         "duration": 0
     },
     {
@@ -2163,15 +2211,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00760009-00ac-00fd-0017-00f6002d0080.png",
-        "timestamp": 1571225242768,
+        "screenShotFile": "009400d9-00aa-0066-00e2-000300c8009b.png",
+        "timestamp": 1573528372531,
         "duration": 0
     },
     {
@@ -2179,15 +2227,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00ee00ed-0065-0055-0067-00d50016008b.png",
-        "timestamp": 1571225242775,
+        "screenShotFile": "00f200cc-0066-00ce-00e2-001400010057.png",
+        "timestamp": 1573528372538,
         "duration": 0
     },
     {
@@ -2195,15 +2243,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00480092-0051-0086-00c4-009700a2000e.png",
-        "timestamp": 1571225242781,
+        "screenShotFile": "005d0060-009c-0021-0094-004600b20072.png",
+        "timestamp": 1573528372544,
         "duration": 0
     },
     {
@@ -2211,15 +2259,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004600a2-0065-0005-0066-0024002000dd.png",
-        "timestamp": 1571225242788,
+        "screenShotFile": "007200c6-0061-006f-00d7-00dd00ea006d.png",
+        "timestamp": 1573528372550,
         "duration": 0
     },
     {
@@ -2227,15 +2275,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0012003c-00c6-0050-0097-00be00290082.png",
-        "timestamp": 1571225242794,
+        "screenShotFile": "0076007d-000f-005b-004e-00c1003b00d4.png",
+        "timestamp": 1573528372556,
         "duration": 0
     },
     {
@@ -2243,15 +2291,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "006c00d5-0008-00c5-0088-0053008f001a.png",
-        "timestamp": 1571225242801,
+        "screenShotFile": "00660049-00ee-0008-004e-00e100af005e.png",
+        "timestamp": 1573528372562,
         "duration": 0
     },
     {
@@ -2259,31 +2307,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00aa00f4-0009-0067-0013-0054003800df.png",
-        "timestamp": 1571225242807,
-        "duration": 1
+        "screenShotFile": "00ac00ad-00bd-0084-0093-00f10065007a.png",
+        "timestamp": 1573528372569,
+        "duration": 0
     },
     {
         "description": "Verify default receipt printer can used to test print|Settings Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00bd00d9-00fd-006a-0059-006a00770019.png",
-        "timestamp": 1571225242814,
+        "screenShotFile": "004f001f-00d3-0048-006f-003f001d0063.png",
+        "timestamp": 1573528372577,
         "duration": 0
     },
     {
@@ -2291,15 +2339,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005100a2-0044-00c1-0014-00d9002500bc.png",
-        "timestamp": 1571225242821,
+        "screenShotFile": "00800030-00df-0021-006e-004c0066002d.png",
+        "timestamp": 1573528372650,
         "duration": 0
     },
     {
@@ -2307,15 +2355,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00590067-0012-0020-008a-008b00d500b8.png",
-        "timestamp": 1571225242828,
+        "screenShotFile": "001400bc-00bc-00d8-0083-00ce0098009b.png",
+        "timestamp": 1573528372660,
         "duration": 0
     },
     {
@@ -2323,15 +2371,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005b00e0-00b7-0001-005d-003c000700a7.png",
-        "timestamp": 1571225242835,
+        "screenShotFile": "001f0010-00a1-00fc-003b-009d00610000.png",
+        "timestamp": 1573528372670,
         "duration": 0
     },
     {
@@ -2339,15 +2387,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00b70020-000a-0092-000e-00f700d500fb.png",
-        "timestamp": 1571225242843,
+        "screenShotFile": "00fb00d5-009a-0057-00e8-00ea006c00d5.png",
+        "timestamp": 1573528372678,
         "duration": 0
     },
     {
@@ -2355,15 +2403,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005f00f5-00ba-0020-00ab-0029005c00fa.png",
-        "timestamp": 1571225242850,
+        "screenShotFile": "009b0061-0049-00d5-00be-0062002000b4.png",
+        "timestamp": 1573528372689,
         "duration": 0
     },
     {
@@ -2371,15 +2419,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00830043-00aa-007c-001e-000a008600a1.png",
-        "timestamp": 1571225242858,
+        "screenShotFile": "00060015-00e3-002f-0035-007a00bd001f.png",
+        "timestamp": 1573528372701,
         "duration": 0
     },
     {
@@ -2387,15 +2435,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "002900d1-0096-000e-004a-007700a2001a.png",
-        "timestamp": 1571225242867,
+        "screenShotFile": "000500a3-0075-0036-002b-00cd001b007c.png",
+        "timestamp": 1573528372711,
         "duration": 0
     },
     {
@@ -2403,15 +2451,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00a400e5-00e6-00d4-004d-009500ec0008.png",
-        "timestamp": 1571225242873,
+        "screenShotFile": "00400083-0018-0049-002b-00c900f500d6.png",
+        "timestamp": 1573528372723,
         "duration": 0
     },
     {
@@ -2419,15 +2467,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00f9001c-0081-00ed-009a-008f004800d0.png",
-        "timestamp": 1571225242880,
+        "screenShotFile": "004b0043-00ee-0031-004d-002d00a300b7.png",
+        "timestamp": 1573528372734,
         "duration": 0
     },
     {
@@ -2435,15 +2483,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00170027-00c6-0000-0087-004d001300da.png",
-        "timestamp": 1571225242887,
+        "screenShotFile": "00e1009d-0026-0080-0076-005d007400d2.png",
+        "timestamp": 1573528372742,
         "duration": 0
     },
     {
@@ -2451,15 +2499,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "009c00ae-003b-00e4-0047-008400f6009e.png",
-        "timestamp": 1571225242894,
+        "screenShotFile": "00fe00a1-005b-004d-00f5-00cd007f00e4.png",
+        "timestamp": 1573528372751,
         "duration": 0
     },
     {
@@ -2467,31 +2515,31 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "009d00cb-001c-0094-0035-009500950056.png",
-        "timestamp": 1571225242900,
-        "duration": 1
+        "screenShotFile": "00820037-0021-00d0-00fc-005600d200f4.png",
+        "timestamp": 1573528372759,
+        "duration": 0
     },
     {
         "description": "Verify terminal can be edit and save|Settings Page",
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d60049-0041-00ee-0041-0091000400e2.png",
-        "timestamp": 1571225242907,
+        "screenShotFile": "00c900e8-0006-00b9-0066-000d00140033.png",
+        "timestamp": 1573528372766,
         "duration": 0
     },
     {
@@ -2499,15 +2547,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00e50085-002b-000a-007c-00010033009d.png",
-        "timestamp": 1571225242914,
+        "screenShotFile": "008600b4-00ca-00e3-009a-00af00e40014.png",
+        "timestamp": 1573528372774,
         "duration": 0
     },
     {
@@ -2515,15 +2563,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d600ac-000c-0043-00f6-0056009d005e.png",
-        "timestamp": 1571225242921,
+        "screenShotFile": "0074002b-0055-0040-00bc-0090004500ab.png",
+        "timestamp": 1573528372781,
         "duration": 0
     },
     {
@@ -2531,15 +2579,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "009e009d-00b2-0063-0074-00cf001d0006.png",
-        "timestamp": 1571225242928,
+        "screenShotFile": "00ab008d-00a2-00e7-00c6-00c5000d0055.png",
+        "timestamp": 1573528372787,
         "duration": 0
     },
     {
@@ -2547,15 +2595,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "001c006e-0078-006a-006b-007b00c30016.png",
-        "timestamp": 1571225242935,
+        "screenShotFile": "00cf00bd-0080-00a8-00e1-008f00f600c6.png",
+        "timestamp": 1573528372793,
         "duration": 0
     },
     {
@@ -2563,15 +2611,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "008f007a-000b-006b-00bb-001f001f00fc.png",
-        "timestamp": 1571225242942,
+        "screenShotFile": "001900b9-00ac-002e-00ed-00b700ff00ce.png",
+        "timestamp": 1573528372800,
         "duration": 0
     },
     {
@@ -2579,15 +2627,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0044001c-00a0-0070-00d7-008e0038009d.png",
-        "timestamp": 1571225242950,
+        "screenShotFile": "0081001d-0074-006b-00e8-00e100da000b.png",
+        "timestamp": 1573528372807,
         "duration": 0
     },
     {
@@ -2595,15 +2643,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "001c0043-0019-0062-004b-0041003600bc.png",
-        "timestamp": 1571225242957,
+        "screenShotFile": "00b90028-00c5-005e-009a-00020019002b.png",
+        "timestamp": 1573528372813,
         "duration": 0
     },
     {
@@ -2611,15 +2659,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00bd00af-0099-007d-0050-0081003200bd.png",
-        "timestamp": 1571225242965,
+        "screenShotFile": "0060008c-00a5-00ee-00eb-00ee006500ae.png",
+        "timestamp": 1573528372821,
         "duration": 0
     },
     {
@@ -2627,15 +2675,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00f4002f-000c-00fa-00ff-00b300850094.png",
-        "timestamp": 1571225242972,
+        "screenShotFile": "002300f2-0057-00a1-004b-005000c800d7.png",
+        "timestamp": 1573528372827,
         "duration": 0
     },
     {
@@ -2643,15 +2691,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "004900c4-00b2-007e-0094-00d700f60059.png",
-        "timestamp": 1571225242979,
+        "screenShotFile": "004f00c7-0032-0052-00dc-00b4009a0033.png",
+        "timestamp": 1573528372835,
         "duration": 0
     },
     {
@@ -2659,15 +2707,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00f5004d-0095-00b3-0030-00160006000a.png",
-        "timestamp": 1571225242986,
+        "screenShotFile": "00b00016-008b-002f-0038-000900550047.png",
+        "timestamp": 1573528372841,
         "duration": 0
     },
     {
@@ -2675,15 +2723,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00d60010-00b0-007a-005f-001f002a009e.png",
-        "timestamp": 1571225242993,
+        "screenShotFile": "00d1007c-0041-0015-00ef-006500e300e4.png",
+        "timestamp": 1573528372849,
         "duration": 0
     },
     {
@@ -2691,15 +2739,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c4008a-001b-00a6-00a0-00cf007100ca.png",
-        "timestamp": 1571225243000,
+        "screenShotFile": "00ab00ec-00be-00b6-000f-0055007c00b1.png",
+        "timestamp": 1573528372859,
         "duration": 0
     },
     {
@@ -2707,15 +2755,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "0008002f-00ea-0004-00fb-00e2003400e8.png",
-        "timestamp": 1571225243011,
+        "screenShotFile": "0069001e-00df-0031-0008-0013009a0039.png",
+        "timestamp": 1573528372869,
         "duration": 0
     },
     {
@@ -2723,15 +2771,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00790056-0072-007e-00db-005300c20076.png",
-        "timestamp": 1571225243022,
+        "screenShotFile": "004200b9-00e5-0046-00fa-00ac00b7003c.png",
+        "timestamp": 1573528372877,
         "duration": 0
     },
     {
@@ -2739,15 +2787,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00ab005c-004c-005e-00bf-00be005c006b.png",
-        "timestamp": 1571225243032,
+        "screenShotFile": "00580024-0019-00ab-0070-004c002b00b5.png",
+        "timestamp": 1573528372887,
         "duration": 0
     },
     {
@@ -2755,15 +2803,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005b00f9-0046-0050-00bf-00fd00ae00a4.png",
-        "timestamp": 1571225243040,
+        "screenShotFile": "000e00c7-001b-00f0-001d-00db00a6005e.png",
+        "timestamp": 1573528372896,
         "duration": 0
     },
     {
@@ -2771,15 +2819,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00c900b4-00c3-00e7-00c6-0079009f0011.png",
-        "timestamp": 1571225243048,
+        "screenShotFile": "00e700c4-005c-00b2-00bc-006e00b400c5.png",
+        "timestamp": 1573528372903,
         "duration": 0
     },
     {
@@ -2787,15 +2835,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "005500f8-0025-0020-0034-00e400c3008c.png",
-        "timestamp": 1571225243055,
+        "screenShotFile": "009c007a-00df-0060-00ba-005d0090002b.png",
+        "timestamp": 1573528372910,
         "duration": 0
     },
     {
@@ -2803,15 +2851,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00cb0023-0058-0073-0091-001b00ee0097.png",
-        "timestamp": 1571225243063,
+        "screenShotFile": "004000d3-0086-00a4-00ca-0018002100fa.png",
+        "timestamp": 1573528372920,
         "duration": 0
     },
     {
@@ -2819,15 +2867,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00500002-0032-0093-0080-00bb00b6006e.png",
-        "timestamp": 1571225243070,
+        "screenShotFile": "004b0083-00e2-006d-0069-007b00ef0016.png",
+        "timestamp": 1573528372929,
         "duration": 0
     },
     {
@@ -2835,15 +2883,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "00130039-00b8-0009-0007-00c2009b00d3.png",
-        "timestamp": 1571225243077,
+        "screenShotFile": "00400022-00e3-00ed-00c5-00c700b90089.png",
+        "timestamp": 1573528372939,
         "duration": 0
     },
     {
@@ -2851,15 +2899,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "000200f1-001c-003b-0031-003c00570029.png",
-        "timestamp": 1571225243085,
+        "screenShotFile": "00fb005a-0083-00da-00d2-00c100260038.png",
+        "timestamp": 1573528372948,
         "duration": 0
     },
     {
@@ -2867,15 +2915,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "006400fd-00f8-005b-0082-006a001500b6.png",
-        "timestamp": 1571225243092,
+        "screenShotFile": "00420022-0087-007c-00cc-004f00d200fe.png",
+        "timestamp": 1573528372955,
         "duration": 0
     },
     {
@@ -2883,15 +2931,15 @@ app.controller('ScreenshotReportController', ['$scope', '$http', 'TitleService',
         "passed": false,
         "pending": true,
         "os": "Linux",
-        "instanceId": 10751,
+        "instanceId": 9995,
         "browser": {
             "name": "chrome",
-            "version": "76.0.3809.100"
+            "version": "78.0.3904.97"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "001c00b2-00ba-0087-000f-001d00db007e.png",
-        "timestamp": 1571225243100,
+        "screenShotFile": "0086002e-0074-002b-0033-0035007a00f0.png",
+        "timestamp": 1573528372962,
         "duration": 0
     }
 ];

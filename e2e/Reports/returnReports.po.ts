@@ -2,7 +2,7 @@ import { by, element, ElementFinder } from 'protractor';
 
 export class ReturnReportPage {
 
-    public  ReturnReportLink(): ElementFinder {
+    public get ReturnReportLink(): ElementFinder {
         return element(by.xpath('//*[@id="main-body"]/div[2]/div[2]/ul/li[9]/ul/li[13]/a'));
     }
     public get returnReportTitle(): ElementFinder {
@@ -15,10 +15,10 @@ export class ReturnReportPage {
         return element(by.xpath('//*[@id="endDateCal"]'));
     }
     public get runWithNewDate(): ElementFinder {
-        return element(by.xpath('//*[@id="submit_allReturns"]'));
+        return element(by.xpath('//*[@id="form_allReturns"]/div'));
     }
     public get exportReportButton(): ElementFinder {
-        return element(by.xpath('//*[@id="submit_allReturns_export"]'));
+        return element(by.xpath('//*[@id="form_allReturns_export"]/div'));
     }
     public get searchBar(): ElementFinder {
         return element(by.xpath('//*[@id="returns_report_filter"]/label/input'));
@@ -27,9 +27,9 @@ export class ReturnReportPage {
         return element(by.xpath('//*[@id="returns_report_length"]/label/select'));
     }
     public get firstRowData(): ElementFinder {
-        return element(by.xpath('//*[@id="returns_report"]/thead'));
+        return element(by.xpath('//*[@id="returns_report"]/thead/tr/th[2]'));
     }
-    // public get fromFirstRowOfGeneratedReports(): ElementFinder {
-    //     return element(by.xpath('//*[@id="main-body"]/div[3]/div[2]/div/div[2]/div/div[3]/table/tbody/tr[1]/td[4]'));
-    // }
+    public get fromFirstRowOfGeneratedReports(): ElementFinder {
+        return element(by.xpath('//*[@id="returns_report"]/tbody/tr[1]'));
+    }
 }

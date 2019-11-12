@@ -1,1 +1,0 @@
-{"description":"Verify POS page top bar item is clickable and show its specific information|After Clicking POS","passed":false,"pending":true,"os":"Linux","instanceId":11624,"browser":{"name":"chrome","version":"77.0.3865.120"},"message":"Pending","browserLogs":[],"screenShotFile":"00f800f2-00af-005c-0006-00970093006c.png","timestamp":1573023067860,"duration":0}

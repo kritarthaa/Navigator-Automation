@@ -2,7 +2,7 @@ import { AppPage } from '../app.po';
 import { ReportPage } from './reports.po';
 import { browser, ExpectedConditions } from 'protractor';
 
-describe('Reports Page', () => {
+fdescribe('Reports Page', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
@@ -21,8 +21,8 @@ describe('Reports Page', () => {
     it('Verify the contents of UI of Returns Report', async () => {
 
         await app.reports.closeout.ReportsLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.ReturnReportLink);
-        await app.reports.returnReport.returnReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.ReturnReportLink)));
+        await app.reports.returnReport.ReturnReportLink.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportTitle)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.startDateInput)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.endDateInput)));
@@ -36,8 +36,8 @@ describe('Reports Page', () => {
     it('Verify for the sales of return', async () => {
 
         await app.reports.closeout.ReportsLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportLink)));
-        await app.reports.returnReport.returnReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.ReturnReportLink)));
+        await app.reports.returnReport.ReturnReportLink.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportTitle)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.startDateInput)));
         await app.reports.returnReport.startDateInput.clear();
@@ -51,8 +51,8 @@ describe('Reports Page', () => {
     it('Verify new reports can be generated from export report', async () => {
 
         await app.reports.closeout.ReportsLink.click();
-        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportLink)));
-        await app.reports.returnReport.returnReportLink.click();
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.ReturnReportLink)));
+        await app.reports.returnReport.ReturnReportLink.click();
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.returnReportTitle)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.startDateInput)));
         await app.reports.returnReport.startDateInput.clear();
