@@ -30,8 +30,8 @@ describe('Reports Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.closeout.exportDataToCSV)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.closeout.tableHead)));
 
-   });
-   // Reports -> Close out terminal : Verify date can be selected and it loads the respective reports
+    });
+    // Reports -> Close out terminal : Verify date can be selected and it loads the respective reports
     it('Verify date can be selected and it loads the respective reports', async () => {
 
         await app.reports.closeout.ReportsLink.click();

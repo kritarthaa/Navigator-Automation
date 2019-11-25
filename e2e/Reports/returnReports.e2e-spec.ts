@@ -29,6 +29,7 @@ describe('Reports Page', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.runWithNewDate)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.exportReportButton)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.searchBar)));
+        await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.locationFilter)));
         await (browser.wait(ExpectedConditions.visibilityOf(app.reports.returnReport.showOption)));
 
     });
