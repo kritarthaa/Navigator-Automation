@@ -2,9 +2,9 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
-// var HtmlReporter = require('protractor-beautiful-reporter');
-// var VideoReporter = require('protractor-video-reporter');
-// var Path = require('path');
+var HtmlReporter = require('protractor-beautiful-reporter');
+var VideoReporter = require('protractor-video-reporter');
+var Path = require('path');
 
 exports.config = {
   allScriptsTimeout: 11000,
@@ -15,7 +15,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {
-        args: ["disable-infobars", "--start-maximized", "--window-size=1630,963", "--headless"]
+        args: ["disable-infobars", "--start-maximized", "--window-size=1630,963"]
     }
   },
   directConnect: true,
@@ -35,21 +35,21 @@ exports.config = {
   onPrepare() {
     browser.waitForAngularEnabled(false)
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-    // jasmine.getEnv().addReporter(new HtmlReporter({
-    //   baseDirectory: 'e2e-report/htmlReporter',
-    //   takeScreenShotsOnlyForFailedSpecs: true,
-    //   preserveDirectory: false,
-    //   jsonsSubfolder: 'jsons'
+    jasmine.getEnv().addReporter(new HtmlReporter({
+      baseDirectory: 'e2e-report/htmlReporter',
+      takeScreenShotsOnlyForFailedSpecs: true,
+      preserveDirectory: false,
+      jsonsSubfolder: 'jsons'
 
-    // }).getJasmine2Reporter());
-    // jasmine.getEnv().addReporter(new VideoReporter({
-    //   baseDirectory: Path.join(__dirname, 'e2e-report/videoReporter/videos/'),
-    //   singleVideo: false,
-    //   singleVideoPath: (result) => {
-    //     const fileName = result.fullName.trim().split(' ').join('-')
-    //     return fileName + '.mov';
-    //   }
-    // }));
+    }).getJasmine2Reporter());
+    jasmine.getEnv().addReporter(new VideoReporter({
+      baseDirectory: Path.join(__dirname, 'e2e-report/videoReporter/videos/'),
+      singleVideo: false,
+      singleVideoPath: (result) => {
+        const fileName = result.fullName.trim().split(' ').join('-')
+        return fileName + '.mov';
+      }
+    }));
 
     // Run setup tests first
     require("./e2e/setup.e2e-spec")
