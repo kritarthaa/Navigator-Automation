@@ -9,6 +9,10 @@ import { ReturnItemReportPage } from './returnItemReports.po';
 import {  SalesReportPage } from './salesReport.po';
 import {NewCustomers} from './newCustomers.po';
 import { ZReport } from './zReport.po';
+import { DiscountsByEmployee } from './discountByEmployee.po';
+import {PaymentsReport} from './paymentsReport.po';
+import { BestSellingProductPage } from './bestSellingProducts.po';
+import { EmployeeSales } from './employeeSales.po';
 
 export interface AutomationUser {
   email: string;
@@ -31,6 +35,10 @@ export class ReportPage {
   public salesReport = new SalesReportPage();
   public newCustomers = new NewCustomers();
   public zReport = new ZReport();
+  public discountsByEmployee = new DiscountsByEmployee();
+  public paymentsReport = new PaymentsReport();
+  public bestSellingProduct = new BestSellingProductPage();
+  public employeeSales = new EmployeeSales();
 
   public validLogin(usernameText, passwordText) {
     browser.wait(ExpectedConditions.visibilityOf(this.login.emailInput()), 10000);
